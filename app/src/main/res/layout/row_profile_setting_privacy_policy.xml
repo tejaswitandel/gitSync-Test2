@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileSettingPrivacyPolicyRowModel" type="com.wqes.app.modules.profilesettingprivacypolicy.data.model.ProfileSettingPrivacyPolicyRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle_1">
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtPrivacy" android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@{profileSettingPrivacyPolicyRowModel.txtPrivacy}" style="@style/textStylePoppinssemibold16"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtItIsALongEs"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14px"
+            android:layout_width="match_parent"
+            android:text="@{profileSettingPrivacyPolicyRowModel.txtItIsALongEs}" style="@style/textStylePoppinsregular14_8"/>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10px"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <FrameLayout android:background="@color/black_800"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.02" android:layout_width="0dp"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtThePointOfUs"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15px"
+                android:layout_weight="0.98" android:layout_width="0dp"
+                android:text="@{profileSettingPrivacyPolicyRowModel.txtThePointOfUs}" style="@style/textStylePoppinsregular14_8"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12px"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <FrameLayout android:background="@color/black_800"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.02" android:layout_width="0dp"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtThePointOfUs1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15px"
+                android:layout_weight="0.98" android:layout_width="0dp"
+                android:text="@{profileSettingPrivacyPolicyRowModel.txtThePointOfUs1}" style="@style/textStylePoppinsregular14_8"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

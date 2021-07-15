@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileMyOrderHistoryMyOrderDetailRepeatOrderVM" type="com.wqes.app.modules.profilemyorderhistorymyorderdetailrepeatorder.data.viewmodel.ProfileMyOrderHistoryMyOrderDetailRepeatOrderVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_22px"
+                android:layout_marginEnd="@dimen/_21px"
+                android:layout_marginStart="@dimen/_21px"
+                android:layout_marginTop="@dimen/_73px"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.55"
+                    android:layout_width="0dp"
+                    android:text="@string/msg_order_code_f" style="@style/textStylePoppinsmedium14_7"/>
+                <TextView android:gravity="top|end"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:text="@string/lbl_850" style="@style/textStylePoppinsmedium14_7"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.core.widget.NestedScrollView
+            android:fillViewport="true" android:layout_height="0dp"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content" android:layout_width="match_parent">
+                    <ImageView android:layout_gravity="center"
+                        android:layout_height="@dimen/_106px" android:layout_width="@dimen/_414px"/>
+                    <LinearLayout android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical" style="@style/groupStyle_1">
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="start"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_my_order_detail" style="@style/textStylePoppinsmedium16"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <EditText
+                    android:background="@drawable/rectangle_bg_gray_600_radius_25"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="top|start"
+                    android:hint="@string/msg_mark_as_favouri"
+                    android:id="@+id/etMarkAsFavouri"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20px"
+                    android:layout_marginStart="@dimen/_20px"
+                    android:layout_marginTop="@dimen/_30px"
+                    android:layout_width="wrap_content"
+                    android:paddingBottom="@dimen/_2px"
+                    android:paddingStart="@dimen/_28px"
+                    android:paddingTop="@dimen/_6px"
+                    android:singleLine="true"
+                    android:textColor="@color/white_A700"
+                    android:textColorHint="@color/white_A700"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_12px" android:textStyle="normal"/>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_100px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle_1">
+                    <View
+                        android:background="@drawable/rectangle_bg_bluegray_200_radius_15"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px" android:layout_width="match_parent"/>
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_21px"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.21"
+                            android:layout_width="0dp"
+                            android:text="@string/lbl_item_total" style="@style/textStylePoppinsregular16_1"/>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.37"
+                            android:layout_width="0dp"
+                            android:text="@string/lbl_750" style="@style/textStylePoppinsregular16_1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_16px"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:text="@string/lbl_delivery_charge" style="@style/textStylePoppinsregular14_1"/>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.37"
+                            android:layout_width="0dp"
+                            android:text="@string/lbl_50" style="@style/textStylePoppinsregular14_1"/>
+                    </LinearLayout>
+                    <FrameLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_14px" android:layout_width="match_parent">
+                        <LinearLayout
+                            android:layout_gravity="top|center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:layout_width="0dp"
+                                android:text="@string/msg_tip_for_your_ri" style="@style/textStylePoppinsregular14_1"/>
+                            <TextView android:gravity="top|end"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.37"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_50" style="@style/textStylePoppinsregular14_1"/>
+                        </LinearLayout>
+                        <FrameLayout android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" style="@style/groupStyle_1">
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:gravity="center"
+                                android:id="@+id/btnRepeatOrder"
+                                android:layout_gravity="center"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_25px"
+                                android:layout_marginEnd="@dimen/_20px"
+                                android:layout_marginStart="@dimen/_20px"
+                                android:layout_marginTop="@dimen/_25px"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_12px"
+                                android:paddingEnd="@dimen/_30px"
+                                android:paddingStart="@dimen/_30px"
+                                android:paddingTop="@dimen/_15px"
+                                android:text="@string/lbl_repeat_order" style="@style/textStylePoppinsmedium14_1"/>
+                        </FrameLayout>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:gravity="center"
+                            android:id="@+id/btnRepeatOrder1"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_12px"
+                            android:paddingEnd="@dimen/_30px"
+                            android:paddingStart="@dimen/_30px"
+                            android:paddingTop="@dimen/_15px"
+                            android:text="@string/lbl_repeat_order" style="@style/textStylePoppinsmedium14_1"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_discount" style="@style/textStylePoppinsregular14_1"/>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="center|end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_20px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_20" style="@style/textStylePoppinsregular14_1"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_12px"
+                            android:layout_marginStart="@dimen/_20px"
+                            android:layout_marginTop="@dimen/_72px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_gst" style="@style/textStylePoppinsregular14_1"/>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="bottom|end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_12px"
+                            android:layout_marginEnd="@dimen/_20px"
+                            android:layout_marginTop="@dimen/_72px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_201" style="@style/textStylePoppinsregular14_1"/>
+                    </FrameLayout>
+                    <View
+                        android:background="@drawable/rectangle_bg_bluegray_200_radius_15"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_2px" android:layout_width="match_parent"/>
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_17px"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.11"
+                            android:layout_width="0dp"
+                            android:text="@string/lbl_total" style="@style/textStylePoppinsmedium16_1"/>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.37"
+                            android:layout_width="0dp"
+                            android:text="@string/lbl_850" style="@style/textStylePoppinsmedium16_1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20px"
+                    android:layout_marginStart="@dimen/_20px"
+                    android:layout_marginTop="@dimen/_31px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle_1">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/msg_delivery_date" style="@style/textStylePoppinssemibold16"/>
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_16px"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_14px"
+                            android:layout_width="@dimen/_14px" android:src="@drawable/_4b0bd8ce40e9179ba94e89d3bb34724a"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_7px"
+                            android:layout_weight="0.37"
+                            android:layout_width="0dp"
+                            android:text="@string/msg_fri_1_july_0" style="@style/textStylePoppinsregular14"/>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.44"
+                            android:layout_width="0dp"
+                            android:text="@string/lbl_delivered" style="@style/textStylePoppinsregular14_7"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_19px"
+                    android:layout_marginStart="@dimen/_19px"
+                    android:layout_marginTop="@dimen/_29px"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_26px}" tools:itemCount="2" tools:listitem="@layout/row_profile_my_order_history_my_order_detail_repeat_order"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

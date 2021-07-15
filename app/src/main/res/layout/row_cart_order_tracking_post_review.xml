@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cartOrderTrackingPostReviewRowModel" type="com.wqes.app.modules.cartordertrackingpostreview.data.model.CartOrderTrackingPostReviewRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtQualityOfFood"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32" android:layout_width="0dp"
+            android:text="@{cartOrderTrackingPostReviewRowModel.txtQualityOfFood}" style="@style/textStylePoppinsregular16_1"/>
+        <ImageView android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_18px"
+            android:layout_width="@dimen/_135px" android:src="@drawable/_f235027df076dd004e346168c68006ec"/>
+        <ImageView android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_18px"
+            android:layout_width="@dimen/_135px" android:src="@drawable/_f235027df076dd004e346168c68006ec"/>
+    </LinearLayout>
+</layout>

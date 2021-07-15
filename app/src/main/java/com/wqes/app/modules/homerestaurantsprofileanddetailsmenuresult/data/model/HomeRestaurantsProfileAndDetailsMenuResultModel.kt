@@ -1,0 +1,3 @@
+package com.wqes.app.modules.homerestaurantsprofileanddetailsmenuresult.`data`.model
+
+public class HomeRestaurantsProfileAndDetailsMenuResultModel

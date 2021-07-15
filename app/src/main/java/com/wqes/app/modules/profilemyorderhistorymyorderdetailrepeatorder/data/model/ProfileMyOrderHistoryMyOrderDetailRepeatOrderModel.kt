@@ -1,0 +1,3 @@
+package com.wqes.app.modules.profilemyorderhistorymyorderdetailrepeatorder.`data`.model
+
+public class ProfileMyOrderHistoryMyOrderDetailRepeatOrderModel

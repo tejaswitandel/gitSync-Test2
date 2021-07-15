@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="group5704VM" type="com.wqes.app.modules.group5704.data.viewmodel.Group5704VM"/>
+    </data>
+    <FrameLayout android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_57px"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylered_300">
+            <LinearLayout android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20px"
+                android:layout_marginStart="@dimen/_20px"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_17px"
+                    android:layout_width="@dimen/_10px" android:src="@drawable/_2d7e37f470e288bf99df74248282992f"/>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23px"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_offers" style="@style/textStylePoppinsmedium18_1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_27px"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStyle_1">
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                <View android:background="@color/white_A700"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_2px" android:layout_width="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_55px" android:layout_width="match_parent">
+            <FrameLayout android:layout_height="match_parent" android:layout_width="match_parent"/>
+        </androidx.viewpager2.widget.ViewPager2>
+    </FrameLayout>
+</layout>

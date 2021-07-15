@@ -1,0 +1,3 @@
+package com.wqes.app.modules.profilepaymentmethodaddnewcardnodataerror.`data`.model
+
+public class ProfilePaymentMethodAddNewCardNoDataErrorModel

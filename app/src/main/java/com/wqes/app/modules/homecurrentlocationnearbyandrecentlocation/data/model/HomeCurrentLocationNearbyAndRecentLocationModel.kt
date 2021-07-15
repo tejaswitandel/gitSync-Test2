@@ -1,0 +1,3 @@
+package com.wqes.app.modules.homecurrentlocationnearbyandrecentlocation.`data`.model
+
+public class HomeCurrentLocationNearbyAndRecentLocationModel

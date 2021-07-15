@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileDeliveryAddress1VM" type="com.wqes.app.modules.profiledeliveryaddress1.data.viewmodel.ProfileDeliveryAddress1VM"/>
+    </data>
+    <FrameLayout android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyleblack_900">
+        <ImageView android:layout_gravity="center"
+            android:layout_height="@dimen/_736px" android:layout_width="@dimen/_413px"/>
+        <LinearLayout android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_44px"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:gravity="top|end"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.92"
+                    android:layout_width="0dp"
+                    android:text="@string/msg_swipe_right_to" style="@style/textStylePoppinsmedium15"/>
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_18px"
+                    android:layout_marginStart="@dimen/_10px"
+                    android:layout_width="@dimen/_10px" android:src="@drawable/_d74b14c61e307d16d82ab382f1bdeff0"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_84px"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_18px"
+                    android:layout_width="@dimen/_10px" android:src="@drawable/_4c719b038cf8a7a505f7145a429e84bc"/>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9px"
+                    android:layout_weight="0.95"
+                    android:layout_width="0dp"
+                    android:text="@string/msg_swipe_left_to_e" style="@style/textStylePoppinsmedium15"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

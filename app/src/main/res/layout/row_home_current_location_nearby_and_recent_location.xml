@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="homeCurrentLocationNearbyAndRecentLocationRowModel" type="com.wqes.app.modules.homecurrentlocationnearbyandrecentlocation.data.model.HomeCurrentLocationNearbyAndRecentLocationRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_13px"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyle_1">
+        <ImageView android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_15px"
+            android:layout_width="@dimen/_13px" android:src="@drawable/_d74afc1f0e147e2620d74fc330c3af42"/>
+        <LinearLayout android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_13px"
+            android:layout_weight="0.91" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStyle_1">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtDiamondStreet"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{homeCurrentLocationNearbyAndRecentLocationRowModel.txtDiamondStreet}" style="@style/textStylePoppinsregular14"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtDawakiAbuja"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26px"
+                android:layout_marginTop="@dimen/_2px"
+                android:layout_width="match_parent"
+                android:text="@{homeCurrentLocationNearbyAndRecentLocationRowModel.txtDawakiAbuja}" style="@style/textStylePoppinslight12"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

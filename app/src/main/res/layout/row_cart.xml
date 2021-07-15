@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cartRowModel" type="com.wqes.app.modules.cart.data.model.CartRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyle_1">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19" android:layout_width="0dp"
+            app:cardBackgroundColor="@color/black_900"
+            app:cardCornerRadius="@dimen/_5px"
+            app:cardElevation="@dimen/_1px"
+            app:cardUseCompatPadding="true" style="@style/groupStyleblack_900cornerRadius">
+            <ImageView android:layout_gravity="center"
+                android:layout_height="@dimen/_70px"
+                android:layout_width="@dimen/_70px"
+                android:scaleType="fitCenter" imageRes="@{@drawable/_bfa63faa373cbd4ba73f223089b6eea46c5dade2}"/>
+        </com.google.android.material.card.MaterialCardView>
+        <ImageView android:layout_gravity="top"
+            android:layout_height="@dimen/_16px"
+            android:layout_marginStart="@dimen/_14px" android:layout_width="@dimen/_16px"/>
+        <TextView android:gravity="top|start" android:id="@+id/txt200"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08" android:layout_width="0dp"
+            android:text="@{cartRowModel.txt200}" style="@style/textStylePoppinsregular12_7"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txt2LollipopExtr"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" android:layout_width="0dp"
+            android:text="@{cartRowModel.txt2LollipopExtr}" style="@style/textStylePoppinsregular12_1"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtChickenLollipo"
+            android:layout_gravity="top"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3" android:layout_width="0dp"
+            android:text="@{cartRowModel.txtChickenLollipo}" style="@style/textStylePoppinsregular14"/>
+        <EditText
+            android:background="@drawable/oval_bg_black_300_radius_25"
+            android:fontFamily="@font/roboto"
+            android:gravity="top|start" android:hint="@string/lbl"
+            android:id="@+id/etLbl" android:layout_gravity="top"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.26" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_15px"
+            android:paddingStart="@dimen/_9px"
+            android:paddingTop="@dimen/_16px" android:singleLine="true"
+            android:text="@={cartRowModel.etLblValue}"
+            android:textColor="@color/black_900"
+            android:textColorHint="@color/black_900"
+            android:textFontWeight="400" android:textStyle="normal"/>
+        <TextView android:id="@+id/txt" android:layout_gravity="top"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10px"
+            android:layout_weight="0.04" android:layout_width="0dp"/>
+        <ImageView android:layout_gravity="top"
+            android:layout_height="@dimen/_32px"
+            android:layout_marginStart="@dimen/_9px" android:layout_width="@dimen/_32px"/>
+    </LinearLayout>
+</layout>

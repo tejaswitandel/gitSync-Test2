@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileNotificationsVM" type="com.wqes.app.modules.profilenotifications.data.viewmodel.ProfileNotificationsVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_57px"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal" style="@style/groupStylered_300">
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_17px"
+                android:layout_width="@dimen/_10px" android:src="@drawable/_2d7e37f470e288bf99df74248282992f"/>
+            <TextView android:gravity="top|start"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_23px"
+                android:layout_width="wrap_content"
+                android:text="@string/lbl_notifications" style="@style/textStylePoppinsmedium18_1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_49px"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <TextView android:gravity="top|start"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/lbl_new" style="@style/textStylePoppinssemibold16"/>
+            <TextView android:gravity="top|start"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4px"
+                android:layout_width="wrap_content"
+                android:text="@string/lbl_1" style="@style/textStylePoppinsmedium12"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_14px"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_20px"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <HorizontalScrollView android:fillViewport="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:scrollbars="none">
+                    <FrameLayout
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" style="@style/groupStyle_1">
+                        <ImageView android:layout_gravity="center"
+                            android:layout_height="@dimen/_70px"
+                            android:layout_width="@dimen/_105px"
+                            android:scaleType="fitCenter" imageRes="@{@drawable/_67fc8376a15dddcc81ad3eca1a382c35018c9ab3}"/>
+                        <FrameLayout
+                            android:background="@drawable/oval_bg_black_900_radius_5"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                    </FrameLayout>
+                </HorizontalScrollView>
+                <LinearLayout android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20px"
+                    android:layout_weight="0.79"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/msg_your_order_requ" style="@style/textStylePoppinsmedium14_3"/>
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8px"
+                        android:layout_width="match_parent"
+                        android:text="@string/lbl_10_mins_ago" style="@style/textStylePoppinsregular12_6"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:gravity="top|start"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_31px"
+            android:layout_width="wrap_content"
+            android:text="@string/lbl_old" style="@style/textStylePoppinssemibold16"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            itemSpace="@{@dimen/_16px}" tools:itemCount="2" tools:listitem="@layout/row_profile_notifications"/>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_20px"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <HorizontalScrollView android:fillViewport="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:scrollbars="none">
+                    <FrameLayout
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" style="@style/groupStyle_1">
+                        <ImageView android:layout_gravity="center"
+                            android:layout_height="@dimen/_70px"
+                            android:layout_width="@dimen/_92px"
+                            android:scaleType="fitCenter" imageRes="@{@drawable/_7939b33d5fbcdb78fe2b2ee786d3ee2b68acae61}"/>
+                        <FrameLayout
+                            android:background="@drawable/oval_bg_black_900_radius_5"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                    </FrameLayout>
+                </HorizontalScrollView>
+                <LinearLayout android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20px"
+                    android:layout_weight="0.79"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtYourRefundHas"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/msg_your_refund_has" style="@style/textStylePoppinsregular14"/>
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txt5DaysAgo"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8px"
+                        android:layout_width="wrap_content"
+                        android:text="@string/lbl_5_days_ago" style="@style/textStylePoppinsregular12_6"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

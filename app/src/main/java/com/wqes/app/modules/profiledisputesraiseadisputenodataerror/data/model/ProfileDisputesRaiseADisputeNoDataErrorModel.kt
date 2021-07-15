@@ -1,0 +1,3 @@
+package com.wqes.app.modules.profiledisputesraiseadisputenodataerror.`data`.model
+
+public class ProfileDisputesRaiseADisputeNoDataErrorModel

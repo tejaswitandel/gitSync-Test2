@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileSettingPrivacyPolicyVM" type="com.wqes.app.modules.profilesettingprivacypolicy.data.viewmodel.ProfileSettingPrivacyPolicyVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_57px"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal" style="@style/groupStylered_300">
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_17px"
+                android:layout_width="@dimen/_10px" android:src="@drawable/_2d7e37f470e288bf99df74248282992f"/>
+            <TextView android:gravity="top|start"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19px"
+                android:layout_width="wrap_content"
+                android:text="@string/lbl_privacy_policy" style="@style/textStylePoppinsmedium18_1"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_46px"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            itemSpace="@{@dimen/_26px}" tools:itemCount="2" tools:listitem="@layout/row_profile_setting_privacy_policy"/>
+    </LinearLayout>
+</layout>

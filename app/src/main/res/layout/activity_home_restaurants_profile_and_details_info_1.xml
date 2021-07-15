@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeRestaurantsProfileAndDetailsInfo1VM" type="com.wqes.app.modules.homerestaurantsprofileanddetailsinfo1.data.viewmodel.HomeRestaurantsProfileAndDetailsInfo1VM"/>
+    </data>
+    <FrameLayout android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyleblack_900">
+        <LinearLayout android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_100px"
+            android:layout_marginEnd="@dimen/_17px"
+            android:layout_marginStart="@dimen/_17px"
+            android:layout_marginTop="@dimen/_100px"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_4">
+            <TextView android:gravity="top|start"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20px"
+                android:layout_marginStart="@dimen/_20px"
+                android:layout_marginTop="@dimen/_32px"
+                android:layout_width="wrap_content"
+                android:text="@string/lbl_opening_hours" style="@style/textStylePoppinssemibold18"/>
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20px"
+                android:layout_marginStart="@dimen/_20px"
+                android:layout_marginTop="@dimen/_18px"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.41"
+                    android:layout_width="0dp"
+                    android:text="@string/msg_monday_to_frida" style="@style/textStylePoppinsregular16_3"/>
+                <TextView android:gravity="top|end"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_49px"
+                    android:layout_weight="0.59"
+                    android:layout_width="0dp"
+                    android:text="@string/msg_10_30am_10_301" style="@style/textStylePoppinsmedium16_1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20px"
+                android:layout_marginStart="@dimen/_20px"
+                android:layout_marginTop="@dimen/_17px"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.21"
+                    android:layout_width="0dp"
+                    android:text="@string/lbl_saturday" style="@style/textStylePoppinsregular16_3"/>
+                <TextView android:gravity="top|end"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.71"
+                    android:layout_width="0dp"
+                    android:text="@string/msg_9_30am_11_30p" style="@style/textStylePoppinsmedium16_1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20px"
+                android:layout_marginStart="@dimen/_20px"
+                android:layout_marginTop="@dimen/_17px"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.18"
+                    android:layout_width="0dp"
+                    android:text="@string/lbl_sunday" style="@style/textStylePoppinsregular16_3"/>
+                <TextView android:gravity="top|end"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.72"
+                    android:layout_width="0dp"
+                    android:text="@string/msg_9_30am_12_00p" style="@style/textStylePoppinsmedium16_1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

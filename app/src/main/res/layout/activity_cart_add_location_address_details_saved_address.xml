@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cartAddLocationAddressDetailsSavedAddressVM" type="com.wqes.app.modules.cartaddlocationaddressdetailssavedaddress.data.viewmodel.CartAddLocationAddressDetailsSavedAddressVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" android:paddingEnd="@dimen/_20px"
+        android:paddingStart="@dimen/_20px" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout android:layout_gravity="start"
+                android:layout_height="@dimen/_22px"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylered_300">
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_17px"
+                    android:layout_width="@dimen/_10px" android:src="@drawable/_2d7e37f470e288bf99df74248282992f"/>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23px"
+                    android:layout_weight="0.94"
+                    android:layout_width="0dp"
+                    android:text="@string/msg_delivery_addres" style="@style/textStylePoppinsmedium18_1"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.core.widget.NestedScrollView
+            android:fillViewport="true" android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_47px"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_20px"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.13"
+                            android:layout_width="0dp"
+                            android:text="@string/lbl_home" style="@style/textStylePoppinsmedium14_3"/>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.45"
+                            android:layout_width="0dp"
+                            android:text="@string/lbl_default" style="@style/textStylePoppinsregular14_2"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_19px"
+                        android:layout_marginStart="@dimen/_19px"
+                        android:layout_marginTop="@dimen/_8px"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_15px"
+                            android:layout_width="@dimen/_13px" android:src="@drawable/_cec47a15119a01d1b0162e197aef1c97"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_11px"
+                            android:layout_weight="0.96"
+                            android:layout_width="0dp"
+                            android:text="@string/msg_sentosa_park_an" style="@style/textStylePoppinsregular12_1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_26px"
+                        android:layout_marginStart="@dimen/_26px"
+                        android:layout_marginTop="@dimen/_20px"
+                        android:layout_width="wrap_content"
+                        android:text="@string/lbl_beta_house" style="@style/textStylePoppinsmedium14_3"/>
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_23px"
+                        android:layout_marginStart="@dimen/_23px"
+                        android:layout_marginTop="@dimen/_8px"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_14px"
+                            android:layout_width="@dimen/_11px" android:src="@drawable/_58ae731002f98bbed811ef1a0f8511e0"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_14px"
+                            android:layout_weight="0.96"
+                            android:layout_width="0dp"
+                            android:text="@string/msg_zone_a_legisla" style="@style/textStylePoppinsregular12_1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20px"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_20px}" tools:itemCount="2" tools:listitem="@layout/row_cart_add_location_address_details_saved_address"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:gravity="bottom|center"
+                    android:id="@+id/btnAddNewAddress"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10px"
+                    android:layout_marginStart="@dimen/_10px"
+                    android:layout_marginTop="@dimen/_100px"
+                    android:layout_width="match_parent"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_15px"
+                    android:text="@string/lbl_add_new_address" style="@style/textStylePoppinsmedium14_1"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

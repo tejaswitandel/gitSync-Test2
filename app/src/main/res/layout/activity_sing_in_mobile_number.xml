@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="singInMobileNumberVM" type="com.wqes.app.modules.singinmobilenumber.data.viewmodel.SingInMobileNumberVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:gravity="top|start"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_width="wrap_content"
+            android:text="@string/lbl_sign_in" style="@style/textStylePoppinssemibold20"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:gravity="top|start"
+            android:hint="@string/lbl_mobile_or_email"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_46px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_30px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingTop="@dimen/_1px"
+            android:textColorHint="@color/gray_600" style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:fontFamily="@font/poppins"
+                android:id="@+id/etMobileOrEmail"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@string/lbl_mobile_or_email"
+                android:textColor="@color/gray_600"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14px" android:textStyle="normal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:gravity="top|start"
+            android:hint="@string/lbl_password"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_20px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_30px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingTop="@dimen/_1px"
+            android:textColorHint="@color/gray_600" style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:fontFamily="@font/poppins"
+                android:id="@+id/etPassword"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@string/lbl_password"
+                android:textColor="@color/gray_600"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14px" android:textStyle="normal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:gravity="top|center"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_19px"
+            android:layout_marginStart="@dimen/_19px"
+            android:layout_marginTop="@dimen/_9px"
+            android:layout_width="wrap_content"
+            android:text="@string/msg_forgot_password" style="@style/textStylePoppinsregular14_2"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:gravity="center" android:id="@+id/btnSignIn"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_43px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_12px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_15px"
+            android:text="@string/lbl_sign_in" style="@style/textStylePoppinsmedium14_1"/>
+        <TextView android:gravity="top|center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_36px"
+            android:layout_width="wrap_content"
+            android:text="@string/msg_don_t_have_an_a" style="@style/textStylePoppinsmedium14"/>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_36px"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle_1">
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyle_1">
+                <View android:background="@color/black_300"
+                    android:layout_gravity="top"
+                    android:layout_height="@dimen/_1px"
+                    android:layout_weight="0.34" android:layout_width="0dp"/>
+                <TextView android:gravity="top|center"
+                    android:layout_gravity="top"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_11px"
+                    android:layout_weight="0.29"
+                    android:layout_width="0dp"
+                    android:text="@string/lbl_or_connect_with" style="@style/textStylePoppinslight14_1"/>
+                <View android:background="@color/black_300"
+                    android:layout_gravity="top"
+                    android:layout_height="@dimen/_1px"
+                    android:layout_marginStart="@dimen/_12px"
+                    android:layout_weight="0.37" android:layout_width="0dp"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_40px"
+                android:layout_marginTop="@dimen/_21px"
+                android:layout_width="@dimen/_160px" android:src="@drawable/_3542ad05b72598b9a9808ccc80c4d21e"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cartOffersPromoCodeVM" type="com.wqes.app.modules.cartofferspromocode.data.viewmodel.CartOffersPromoCodeVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" android:paddingEnd="@dimen/_20px"
+        android:paddingStart="@dimen/_20px" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_22px"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylered_300">
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_17px"
+                    android:layout_width="@dimen/_10px" android:src="@drawable/_2d7e37f470e288bf99df74248282992f"/>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23px"
+                    android:layout_weight="0.62"
+                    android:layout_width="0dp"
+                    android:text="@string/msg_enter_or_choose" style="@style/textStylePoppinsmedium18_1"/>
+                <TextView android:gravity="top|end"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.36"
+                    android:layout_width="0dp"
+                    android:text="@string/lbl_apply" style="@style/textStylePoppinsregular16"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:fillViewport="true"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_58px"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/msg_available_coupo" style="@style/textStylePoppinssemibold16"/>
+                <FrameLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16px"
+                    android:layout_width="match_parent" style="@style/groupStyle_1">
+                    <LinearLayout android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <FrameLayout android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" style="@style/groupStyleblack_900">
+                            <ImageView android:layout_gravity="center"
+                                android:layout_height="@dimen/_28px"
+                                android:layout_width="@dimen/_87px"
+                                android:scaleType="fitCenter" android:src="@drawable/_9f1386a1cc46b2eb66dad510e7754d0d757f084b"/>
+                        </FrameLayout>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_21px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_apply" style="@style/textStylePoppinsregular16_2"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/msg_flat_discount_o" style="@style/textStylePoppinsregular14"/>
+                        <LinearLayout android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_6px"
+                            android:layout_marginStart="@dimen/_6px"
+                            android:layout_marginTop="@dimen/_4px"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.78"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_on_order_above" style="@style/textStylePoppinsregular14"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_4px"
+                                android:layout_weight="0.22"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_100" style="@style/textStylePoppinsmedium12"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6px"
+                            android:layout_marginTop="@dimen/_3px"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_14px"
+                                android:layout_width="@dimen/_14px" android:src="@drawable/_4b0bd8ce40e9179ba94e89d3bb34724a"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_4px"
+                                android:layout_weight="0.18"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_valid_till" style="@style/textStylePoppinsregular14"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2px"
+                                android:layout_weight="0.18"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_july_2020" style="@style/textStylePoppinsmedium12"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.56"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_view_details" style="@style/textStylePoppinsmedium14"/>
+                        </LinearLayout>
+                        <View android:background="@color/gray_600"
+                            android:layout_gravity="end"
+                            android:layout_height="@dimen/_1px" android:layout_width="match_parent"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:gravity="top|center"
+                        android:hint="@string/lbl_food20"
+                        android:layout_gravity="center|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/_25px"
+                        android:paddingEnd="@dimen/_12px"
+                        android:paddingStart="@dimen/_13px"
+                        android:textColorHint="@color/red_300" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:fontFamily="@font/cerebrisans"
+                            android:id="@+id/etFood20"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@string/lbl_food20"
+                            android:textColor="@color/red_300"
+                            android:textFontWeight="600"
+                            android:textSize="@dimen/_16px" android:textStyle="bold"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18px"
+                    android:layout_width="match_parent" style="@style/groupStyle_1">
+                    <LinearLayout android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <ImageView android:layout_gravity="start"
+                            android:layout_height="@dimen/_23px"
+                            android:layout_width="@dimen/_68px" android:src="@drawable/_af56fbe00d90b18371d1eea69c178b57"/>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_23px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_apply" style="@style/textStylePoppinsregular16_2"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/msg_flat_discount_o" style="@style/textStylePoppinsregular14"/>
+                        <LinearLayout android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4px"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.78"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_on_order_above" style="@style/textStylePoppinsregular14"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_4px"
+                                android:layout_weight="0.22"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_100" style="@style/textStylePoppinsmedium12"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3px"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_14px"
+                                android:layout_width="@dimen/_14px" android:src="@drawable/_4b0bd8ce40e9179ba94e89d3bb34724a"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_4px"
+                                android:layout_weight="0.18"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_valid_till" style="@style/textStylePoppinsregular14"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2px"
+                                android:layout_weight="0.18"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_july_2020" style="@style/textStylePoppinsmedium12"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.56"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_view_details" style="@style/textStylePoppinsmedium14"/>
+                        </LinearLayout>
+                        <View android:background="@color/gray_600"
+                            android:layout_gravity="end"
+                            android:layout_height="@dimen/_1px" android:layout_width="match_parent"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:gravity="top|center"
+                        android:hint="@string/lbl_food40"
+                        android:layout_gravity="center|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/_25px"
+                        android:paddingEnd="@dimen/_12px"
+                        android:paddingStart="@dimen/_13px"
+                        android:textColorHint="@color/red_300" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:fontFamily="@font/cerebrisans"
+                            android:id="@+id/etFood40"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@string/lbl_food40"
+                            android:textColor="@color/red_300"
+                            android:textFontWeight="600"
+                            android:textSize="@dimen/_16px" android:textStyle="bold"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_19px"
+                    android:layout_width="match_parent" style="@style/groupStyle_1">
+                    <LinearLayout android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <FrameLayout android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" style="@style/groupStyleblack_900">
+                            <ImageView android:layout_gravity="center"
+                                android:layout_height="@dimen/_28px"
+                                android:layout_width="@dimen/_87px"
+                                android:scaleType="fitCenter" android:src="@drawable/_9f1386a1cc46b2eb66dad510e7754d0d757f084b"/>
+                        </FrameLayout>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_21px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_apply" style="@style/textStylePoppinsregular16_2"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/msg_flat_discount_o" style="@style/textStylePoppinsregular14"/>
+                        <LinearLayout android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_6px"
+                            android:layout_marginStart="@dimen/_6px"
+                            android:layout_marginTop="@dimen/_4px"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.78"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_on_order_above" style="@style/textStylePoppinsregular14"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_4px"
+                                android:layout_weight="0.22"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_100" style="@style/textStylePoppinsmedium12"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6px"
+                            android:layout_marginTop="@dimen/_3px"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_14px"
+                                android:layout_width="@dimen/_14px" android:src="@drawable/_4b0bd8ce40e9179ba94e89d3bb34724a"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_4px"
+                                android:layout_weight="0.18"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_valid_till" style="@style/textStylePoppinsregular14"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2px"
+                                android:layout_weight="0.18"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_july_2020" style="@style/textStylePoppinsmedium12"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.56"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_view_details" style="@style/textStylePoppinsmedium14"/>
+                        </LinearLayout>
+                        <View android:background="@color/gray_600"
+                            android:layout_gravity="end"
+                            android:layout_height="@dimen/_1px" android:layout_width="match_parent"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:gravity="top|center"
+                        android:hint="@string/lbl_food20"
+                        android:layout_gravity="center|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/_25px"
+                        android:paddingEnd="@dimen/_12px"
+                        android:paddingStart="@dimen/_13px"
+                        android:textColorHint="@color/red_300" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:fontFamily="@font/cerebrisans"
+                            android:id="@+id/etFood21"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@string/lbl_food20"
+                            android:textColor="@color/red_300"
+                            android:textFontWeight="600"
+                            android:textSize="@dimen/_16px" android:textStyle="bold"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18px"
+                    android:layout_width="match_parent" style="@style/groupStyle_1">
+                    <LinearLayout android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <ImageView android:layout_gravity="start"
+                            android:layout_height="@dimen/_23px"
+                            android:layout_width="@dimen/_68px" android:src="@drawable/_f9bffb525cbdb95cd2f8ac6f30cb292b"/>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_23px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_apply" style="@style/textStylePoppinsregular16_2"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/msg_flat_discount_o" style="@style/textStylePoppinsregular14"/>
+                        <LinearLayout android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4px"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.78"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_on_order_above" style="@style/textStylePoppinsregular14"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_4px"
+                                android:layout_weight="0.22"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_100" style="@style/textStylePoppinsmedium12"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3px"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_14px"
+                                android:layout_width="@dimen/_14px" android:src="@drawable/_4b0bd8ce40e9179ba94e89d3bb34724a"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_4px"
+                                android:layout_weight="0.18"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_valid_till" style="@style/textStylePoppinsregular14"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2px"
+                                android:layout_weight="0.18"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_july_2020" style="@style/textStylePoppinsmedium12"/>
+                            <TextView android:gravity="top|start"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.56"
+                                android:layout_width="0dp"
+                                android:text="@string/lbl_view_details" style="@style/textStylePoppinsmedium14"/>
+                        </LinearLayout>
+                        <View android:background="@color/gray_600"
+                            android:layout_gravity="end"
+                            android:layout_height="@dimen/_1px" android:layout_width="match_parent"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:gravity="top|center"
+                        android:hint="@string/lbl_food40"
+                        android:layout_gravity="center|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/_25px"
+                        android:paddingEnd="@dimen/_12px"
+                        android:paddingStart="@dimen/_13px"
+                        android:textColorHint="@color/red_300" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:fontFamily="@font/cerebrisans"
+                            android:id="@+id/etFood41"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@string/lbl_food40"
+                            android:textColor="@color/red_300"
+                            android:textFontWeight="600"
+                            android:textSize="@dimen/_16px" android:textStyle="bold"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="setLocationVM" type="com.wqes.app.modules.setlocation.data.viewmodel.SetLocationVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <HorizontalScrollView android:fillViewport="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_27px"
+            android:layout_width="match_parent" android:scrollbars="none">
+            <FrameLayout android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" style="@style/groupStyle_1">
+                <FrameLayout android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" style="@style/groupStyle_1">
+                    <ImageView android:layout_gravity="center|end"
+                        android:layout_height="@dimen/_409px"
+                        android:layout_width="@dimen/_727px"
+                        android:scaleType="fitCenter" imageRes="@{@drawable/_a60b95ca57886d4d30770e2bdbcefa093d383fb3}"/>
+                    <ImageView android:layout_gravity="center|end"
+                        android:layout_height="@dimen/_290px"
+                        android:layout_width="@dimen/_353px" imageRes="@{@drawable/_ec17f83702fe9f0399521768a4ffe020}"/>
+                </FrameLayout>
+                <ImageView android:layout_gravity="center|end"
+                    android:layout_height="@dimen/_90px"
+                    android:layout_width="@dimen/_99px" imageRes="@{@drawable/_e9c3a6389d3a0ba45724bdc497c21873}"/>
+            </FrameLayout>
+        </HorizontalScrollView>
+        <TextView android:gravity="top|center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2px"
+            android:layout_width="match_parent"
+            android:text="@string/msg_set_your_locati" style="@style/textStylePoppinsregular14"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:gravity="center" android:id="@+id/btnEnableLocation"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_75px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_12px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_15px"
+            android:text="@string/lbl_enable_location" style="@style/textStylePoppinsmedium14_1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:gravity="bottom|center"
+            android:id="@+id/btnNoILlDoIt"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_26px"
+            android:layout_width="match_parent"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_15px"
+            android:text="@string/msg_no_i_ll_do_it" style="@style/textStylePoppinsmedium14_2"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cartOrderTrackingVM" type="com.wqes.app.modules.cartordertracking.data.viewmodel.CartOrderTrackingVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <ImageView android:layout_gravity="bottom|center"
+            android:layout_height="@dimen/_30px" android:layout_width="@dimen/_30px"/>
+        <ImageView android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_14px" android:layout_width="@dimen/_14px"/>
+        <ImageView android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_14px" android:layout_width="@dimen/_14px"/>
+        <FrameLayout android:background="@color/gray_600"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+    </LinearLayout>
+</layout>

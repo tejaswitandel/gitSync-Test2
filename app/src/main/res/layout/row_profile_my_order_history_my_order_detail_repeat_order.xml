@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="profileMyOrderHistoryMyOrderDetailRepeatOrderRowModel" type="com.wqes.app.modules.profilemyorderhistorymyorderdetailrepeatorder.data.model.ProfileMyOrderHistoryMyOrderDetailRepeatOrderRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_28px"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle_1">
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtRestaurantLoca"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30px"
+            android:layout_width="match_parent"
+            android:text="@{profileMyOrderHistoryMyOrderDetailRepeatOrderRowModel.txtRestaurantLoca}" style="@style/textStylePoppinssemibold16"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtPizzaHut" android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:text="@{profileMyOrderHistoryMyOrderDetailRepeatOrderRowModel.txtPizzaHut}" style="@style/textStylePoppinsregular14"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txt143AbujaSoc"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6px"
+            android:layout_width="match_parent"
+            android:text="@{profileMyOrderHistoryMyOrderDetailRepeatOrderRowModel.txt143AbujaSoc}" style="@style/textStylePoppinsregular12_7"/>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_48px"
+            android:layout_marginTop="@dimen/_3px"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_17px"
+                android:layout_width="@dimen/_24px" android:src="@drawable/_fd18a17e44974b6aeb5d5cba018ae25e"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txt234"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6px"
+                android:layout_weight="0.25" android:layout_width="0dp"
+                android:text="@{profileMyOrderHistoryMyOrderDetailRepeatOrderRowModel.txt234}" style="@style/textStylePoppinsregular12_7"/>
+            <View android:background="@color/black_300"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_17px"
+                android:layout_marginStart="@dimen/_4px"
+                android:layout_weight="0.03" android:layout_width="0dp"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txt6655443322"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6px"
+                android:layout_weight="0.55" android:layout_width="0dp"
+                android:text="@{profileMyOrderHistoryMyOrderDetailRepeatOrderRowModel.txt6655443322}" style="@style/textStylePoppinsregular12_7"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

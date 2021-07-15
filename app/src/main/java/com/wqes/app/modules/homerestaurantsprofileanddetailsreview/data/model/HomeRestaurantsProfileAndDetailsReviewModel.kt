@@ -1,0 +1,3 @@
+package com.wqes.app.modules.homerestaurantsprofileanddetailsreview.`data`.model
+
+public class HomeRestaurantsProfileAndDetailsReviewModel

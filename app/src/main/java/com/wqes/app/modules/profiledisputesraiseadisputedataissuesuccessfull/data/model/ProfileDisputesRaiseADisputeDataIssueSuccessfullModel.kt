@@ -1,0 +1,3 @@
+package com.wqes.app.modules.profiledisputesraiseadisputedataissuesuccessfull.`data`.model
+
+public class ProfileDisputesRaiseADisputeDataIssueSuccessfullModel

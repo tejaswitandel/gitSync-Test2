@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="profileDisputesRaiseADisputeDataIssueSuccessfullVM" type="com.wqes.app.modules.profiledisputesraiseadisputedataissuesuccessfull.data.viewmodel.ProfileDisputesRaiseADisputeDataIssueSuccessfullVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" android:paddingEnd="@dimen/_20px"
+        android:paddingStart="@dimen/_20px" style="@style/groupStylewhite_A700">
+        <ImageView android:layout_gravity="start"
+            android:layout_height="@dimen/_17px"
+            android:layout_width="@dimen/_10px" android:src="@drawable/_2d7e37f470e288bf99df74248282992f"/>
+        <ImageView android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_115px"
+            android:layout_marginTop="@dimen/_100px"
+            android:layout_width="@dimen/_119px" imageRes="@{@drawable/_56c63cabcc30a6b34232f666b118b144}"/>
+        <TextView android:gravity="top|center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18px"
+            android:layout_width="wrap_content"
+            android:text="@string/msg_your_dispute_ha" style="@style/textStylePoppinsmedium18"/>
+        <TextView android:gravity="top|start"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12px"
+            android:layout_width="wrap_content"
+            android:text="@string/msg_your_dispute_id" style="@style/textStylePoppinsregular16_3"/>
+        <TextView android:gravity="top|start"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2px"
+            android:layout_width="wrap_content"
+            android:text="@string/lbl_iefood00007" style="@style/textStylePoppinsregular20"/>
+        <TextView android:gravity="top|center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_17px"
+            android:layout_width="match_parent"
+            android:text="@string/msg_please_check_th" style="@style/textStylePoppinsregular14"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:gravity="center" android:id="@+id/btnGoToHome"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_100px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_12px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_15px"
+            android:text="@string/lbl_go_to_home" style="@style/textStylePoppinsmedium14_1"/>
+    </LinearLayout>
+</layout>

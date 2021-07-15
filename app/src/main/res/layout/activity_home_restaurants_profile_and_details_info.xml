@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeRestaurantsProfileAndDetailsInfoVM" type="com.wqes.app.modules.homerestaurantsprofileanddetailsinfo.data.viewmodel.HomeRestaurantsProfileAndDetailsInfoVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout android:layout_gravity="center"
+                android:layout_height="@dimen/_34px"
+                android:layout_marginEnd="@dimen/_20px"
+                android:layout_marginStart="@dimen/_20px"
+                android:layout_marginTop="@dimen/_46px"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyle_1">
+                <LinearLayout android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.46"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/msg_mao_street_chin" style="@style/textStylePoppinsmedium16"/>
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3px"
+                        android:layout_width="match_parent"
+                        android:text="@string/lbl_nigerian" style="@style/textStylePoppinsregular14_9"/>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24px"
+                    android:layout_width="@dimen/_24px" android:src="@drawable/_28497e31509a43de42300db53c09b9ce"/>
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24px"
+                    android:layout_marginStart="@dimen/_8px"
+                    android:layout_width="@dimen/_24px" android:src="@drawable/_e8fb06da9131db3c2757e1b9a13125c9"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:fillViewport="true"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content" android:layout_width="match_parent">
+                    <ImageView android:layout_gravity="center"
+                        android:layout_height="@dimen/_106px" android:layout_width="@dimen/_413px"/>
+                </FrameLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20px"
+                    android:layout_marginStart="@dimen/_20px"
+                    android:layout_marginTop="@dimen/_39px"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_mobile_number" style="@style/textStylePoppinsregular16_3"/>
+                    <LinearLayout android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.67"
+                        android:layout_width="0dp"
+                        android:orientation="horizontal" style="@style/groupStyle_1">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_17px"
+                            android:layout_width="@dimen/_26px" android:src="@drawable/_6cbcd3a2ea2c54e78ca6e66ebdef63ae"/>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6px"
+                            android:layout_weight="0.22"
+                            android:layout_width="0dp"
+                            android:text="@string/lbl_234" style="@style/textStylePoppinsmedium14_3"/>
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_4px"
+                            android:layout_marginStart="@dimen/_3px"
+                            android:layout_width="@dimen/_7px" android:src="@drawable/_33150964fc88d1b9425e1d0dfb71d053"/>
+                        <View android:background="@color/black_300"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_23px"
+                            android:layout_marginStart="@dimen/_10px"
+                            android:layout_weight="0.06" android:layout_width="0dp"/>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6px"
+                            android:layout_weight="0.51"
+                            android:layout_width="0dp"
+                            android:text="@string/lbl_9135715252" style="@style/textStylePoppinsmedium16_1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20px"
+                    android:layout_marginStart="@dimen/_20px"
+                    android:layout_marginTop="@dimen/_3px"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_category" style="@style/textStylePoppinsregular16_3"/>
+                    <TextView android:gravity="top|end"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.51"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_vegetarian" style="@style/textStylePoppinsmedium16_1"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20px"
+                    android:layout_marginStart="@dimen/_20px"
+                    android:layout_marginTop="@dimen/_21px"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.16"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_cuisine" style="@style/textStylePoppinsregular16_3"/>
+                    <TextView android:gravity="top|end"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:layout_width="0dp"
+                        android:text="@string/msg_nigerian_seafo" style="@style/textStylePoppinsmedium16_1"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20px"
+                    android:layout_marginStart="@dimen/_20px"
+                    android:layout_marginTop="@dimen/_21px"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.22"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_open_now" style="@style/textStylePoppinsregular16_3"/>
+                    <TextView android:gravity="top|end"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.73"
+                        android:layout_width="0dp"
+                        android:text="@string/msg_10_30am_10_301" style="@style/textStylePoppinsmedium16_1"/>
+                    <ImageView android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_23px"
+                        android:layout_width="@dimen/_17px" android:src="@drawable/_3e1fd535d2415067e13df71b9273418a"/>
+                </LinearLayout>
+                <View android:background="@color/black_300"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_1px"
+                    android:layout_marginTop="@dimen/_28px" android:layout_width="match_parent"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:gravity="top|start"
+                    android:hint="@string/lbl_note"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20px"
+                    android:layout_marginStart="@dimen/_20px"
+                    android:layout_marginTop="@dimen/_30px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_5px"
+                    android:paddingTop="@dimen/_30px"
+                    android:textColorHint="@color/red_300"
+                    app:boxBackgroundColor="@null" style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/etNote"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingStart="0dp"
+                        android:singleLine="true"
+                        android:text="@string/msg_launch_party_wa"
+                        android:textColor="@color/black_800"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_16px" android:textStyle="bold"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

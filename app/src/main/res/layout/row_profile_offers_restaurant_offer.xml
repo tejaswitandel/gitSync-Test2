@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileOffersRestaurantOfferRowModel" type="com.wqes.app.modules.profileoffersrestaurantoffer.data.model.ProfileOffersRestaurantOfferRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+        <FrameLayout android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_20px" android:layout_width="wrap_content">
+            <LinearLayout android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtOllarica"
+                    android:layout_gravity="top"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.57"
+                    android:layout_width="0dp"
+                    android:text="@{profileOffersRestaurantOfferRowModel.txtOllarica}" style="@style/textStylePoppinsregular14"/>
+                <LinearLayout android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9px"
+                    android:layout_weight="0.43"
+                    android:layout_width="0dp"
+                    android:orientation="horizontal" style="@style/groupStyle_1">
+                    <ImageView android:layout_gravity="top"
+                        android:layout_height="@dimen/_10px"
+                        android:layout_width="@dimen/_10px" android:src="@drawable/_6df562c974c53fb081e73ab0d06492e3"/>
+                    <TextView android:gravity="top|end"
+                        android:id="@+id/txt50"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2px"
+                        android:layout_weight="0.65"
+                        android:layout_width="0dp"
+                        android:text="@{profileOffersRestaurantOfferRowModel.txt50}" style="@style/textStylePoppinsregular12_3"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtGwarinpaAbuja"
+                android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{profileOffersRestaurantOfferRowModel.txtGwarinpaAbuja}" style="@style/textStylePoppinsregular12_1"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <HorizontalScrollView android:fillViewport="true"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:scrollbars="none">
+                <FrameLayout android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" style="@style/groupStyle_1">
+                    <ImageView android:layout_gravity="center"
+                        android:layout_height="@dimen/_70px"
+                        android:layout_width="@dimen/_124px"
+                        android:scaleType="fitCenter" imageRes="@{@drawable/_2e84d89725ebce334fc0c2e8ac30b2bd662fe59b}"/>
+                    <FrameLayout
+                        android:background="@drawable/oval_bg_black_900_radius_5"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                </FrameLayout>
+            </HorizontalScrollView>
+            <ImageView android:layout_gravity="bottom"
+                android:layout_height="@dimen/_15px"
+                android:layout_marginStart="@dimen/_19px"
+                android:layout_width="@dimen/_15px" android:src="@drawable/_fcecc891496c1c78daa106a762a28045"/>
+            <ImageView android:layout_gravity="top"
+                android:layout_height="@dimen/_16px"
+                android:layout_width="@dimen/_15px" android:src="@drawable/_bb55225fb9a5ec4533d545b7ffc1617a"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtAmerican"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.24" android:layout_width="0dp"
+                android:text="@{profileOffersRestaurantOfferRowModel.txtAmerican}" style="@style/textStylePoppinsregular12_6"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtDeliveryIn22"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.47" android:layout_width="0dp"
+                android:text="@{profileOffersRestaurantOfferRowModel.txtDeliveryIn22}" style="@style/textStylePoppinsregular14_8"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txt30OffOnAll"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55" android:layout_width="0dp"
+                android:text="@{profileOffersRestaurantOfferRowModel.txt30OffOnAll}" style="@style/textStylePoppinsregular14_2"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

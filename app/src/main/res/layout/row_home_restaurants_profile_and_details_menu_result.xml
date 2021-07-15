@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="homeRestaurantsProfileAndDetailsMenuResultRowModel" type="com.wqes.app.modules.homerestaurantsprofileanddetailsmenuresult.data.model.HomeRestaurantsProfileAndDetailsMenuResultRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle_1">
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.19" android:layout_width="0dp"
+                app:cardBackgroundColor="@color/black_900"
+                app:cardCornerRadius="@dimen/_5px"
+                app:cardElevation="@dimen/_1px"
+                app:cardUseCompatPadding="true" style="@style/groupStyleblack_900cornerRadius">
+                <ImageView android:layout_gravity="center"
+                    android:layout_height="@dimen/_70px"
+                    android:layout_width="@dimen/_70px"
+                    android:scaleType="fitCenter" imageRes="@{@drawable/_09f0d1221db3fc4b55fa6d5a36d0daa821307c56}"/>
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14px"
+                android:layout_weight="0.08" android:layout_width="0dp" android:orientation="vertical">
+                <ImageView android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_16px" android:layout_width="@dimen/_16px"/>
+                <ImageView android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_10px"
+                    android:layout_marginEnd="@dimen/_5px"
+                    android:layout_marginTop="@dimen/_34px"
+                    android:layout_width="@dimen/_10px" android:src="@drawable/_6df562c974c53fb081e73ab0d06492e3"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.21" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtOlivesOnion"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{homeRestaurantsProfileAndDetailsMenuResultRowModel.txtOlivesOnion}" style="@style/textStylePoppinsregular12_1"/>
+                <TextView android:gravity="top|end"
+                    android:id="@+id/txt50"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12px"
+                    android:layout_marginStart="@dimen/_12px"
+                    android:layout_marginTop="@dimen/_3px"
+                    android:layout_width="match_parent"
+                    android:text="@{homeRestaurantsProfileAndDetailsMenuResultRowModel.txt50}" style="@style/textStylePoppinsregular12_3"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.29" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtClassicTomato"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{homeRestaurantsProfileAndDetailsMenuResultRowModel.txtClassicTomato}" style="@style/textStylePoppinsregular14"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txt40Votes"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12px"
+                    android:layout_marginStart="@dimen/_12px"
+                    android:layout_marginTop="@dimen/_27px"
+                    android:layout_width="match_parent"
+                    android:text="@{homeRestaurantsProfileAndDetailsMenuResultRowModel.txt40Votes}" style="@style/textStylePoppinsregular12_4"/>
+            </LinearLayout>
+            <EditText android:hint="@string/lbl_order_now"
+                android:id="@+id/etOrderNow"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.42" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@={homeRestaurantsProfileAndDetailsMenuResultRowModel.etOrderNowValue}" android:textColorHint="@color/red_300"/>
+        </LinearLayout>
+        <TextView android:gravity="top|start" android:id="@+id/txt150"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6px"
+            android:layout_width="wrap_content"
+            android:text="@{homeRestaurantsProfileAndDetailsMenuResultRowModel.txt150}" style="@style/textStylePoppinsregular12_7"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,3 @@
+package com.wqes.app.modules.singinmobilenumberunregistereddatapopup.`data`.model
+
+public class SingInMobileNumberUnregisteredDataPopupModel

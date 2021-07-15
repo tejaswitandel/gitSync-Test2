@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileMyOrderHistoryEmpty1VM" type="com.wqes.app.modules.profilemyorderhistoryempty1.data.viewmodel.ProfileMyOrderHistoryEmpty1VM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" android:paddingEnd="@dimen/_20px"
+        android:paddingStart="@dimen/_20px" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout android:layout_gravity="start"
+                android:layout_height="@dimen/_22px"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylered_300">
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_17px"
+                    android:layout_width="@dimen/_10px" android:src="@drawable/_2d7e37f470e288bf99df74248282992f"/>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23px"
+                    android:layout_weight="0.94"
+                    android:layout_width="0dp"
+                    android:text="@string/msg_my_order_histor" style="@style/textStylePoppinsmedium18_1"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:fillViewport="true"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_100px"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle_1">
+                    <FrameLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="match_parent" android:layout_width="match_parent">
+                        <FrameLayout android:background="@color/red_300"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                        <FrameLayout android:background="@color/red_300"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                        <FrameLayout android:background="@color/red_300"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                        <FrameLayout android:background="@color/red_300"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                        <FrameLayout android:background="@color/red_300"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                        <LinearLayout android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical" style="@style/groupStyle_1">
+                            <FrameLayout
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="match_parent" android:layout_width="match_parent">
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_97px"
+                                    android:layout_width="@dimen/_74px" imageRes="@{@drawable/_daab59ad90c95341df8589e024fdbc8f}"/>
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical" style="@style/groupStyle_1">
+                                    <FrameLayout
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="match_parent" android:layout_width="match_parent">
+                                    <ImageView
+                                    android:layout_gravity="top|center"
+                                    android:layout_height="@dimen/_9px"
+                                    android:layout_width="@dimen/_8px" android:src="@drawable/_0bd7278008c2113b7449fd75c2d52f92"/>
+                                    <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_24px"
+                                    android:layout_width="@dimen/_37px" android:src="@drawable/_e49acfacee00fdfd30b6b08ac6fd2c75"/>
+                                    <FrameLayout
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content" style="@style/groupStyle_1">
+                                    <FrameLayout
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent" style="@style/groupStyle_1">
+                                    <ProgressBar
+                                    android:id="@+id/progressBar"
+                                    android:indeterminate="false"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:max="100"
+                                    android:maxHeight="@dimen/_10px"
+                                    android:progress="100"
+                                    android:progressDrawable="@drawable/layer_list_bg_black_900" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+                                    <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_9px" android:layout_width="@dimen/_26px"/>
+                                    </FrameLayout>
+                                    <FrameLayout
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content" android:layout_width="match_parent">
+                                    <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_9px" android:layout_width="@dimen/_27px"/>
+                                    <FrameLayout
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content" android:layout_width="match_parent">
+                                    <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_9px"
+                                    android:layout_width="@dimen/_26px" android:src="@drawable/_b9bbbaed50e4374a47c83f55433409ed"/>
+                                    <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_9px"
+                                    android:layout_width="@dimen/_26px" android:src="@drawable/_b9d37e3e0cd5ce6dd71f7682c8ba560f"/>
+                                    </FrameLayout>
+                                    </FrameLayout>
+                                    </FrameLayout>
+                                    </FrameLayout>
+                                </LinearLayout>
+                                <ImageView
+                                    android:layout_gravity="center|end"
+                                    android:layout_height="@dimen/_11px"
+                                    android:layout_marginEnd="@dimen/_19px"
+                                    android:layout_width="@dimen/_7px" android:src="@drawable/_c3b9d7adcfd5b12080c764ee5c4f4b39"/>
+                                <ImageView
+                                    android:layout_gravity="center|end"
+                                    android:layout_height="@dimen/_11px"
+                                    android:layout_marginEnd="@dimen/_12px"
+                                    android:layout_width="@dimen/_11px" android:src="@drawable/_6d89639d71ca28d80b9e833b9c5322dc"/>
+                                <ImageView
+                                    android:layout_gravity="bottom|end"
+                                    android:layout_height="@dimen/_64px"
+                                    android:layout_marginTop="@dimen/_33px"
+                                    android:layout_width="@dimen/_38px" android:src="@drawable/_2410f74408d7eb987539d7ae44e95b49"/>
+                                <ImageView
+                                    android:layout_gravity="center|start"
+                                    android:layout_height="@dimen/_14px"
+                                    android:layout_marginStart="@dimen/_19px"
+                                    android:layout_width="@dimen/_14px" android:src="@drawable/_2b9e50d06129424c35966bfd3a45dcc6"/>
+                                <ImageView
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_38px"
+                                    android:layout_marginTop="@dimen/_59px"
+                                    android:layout_width="@dimen/_38px" android:src="@drawable/_1929b4d1788d8fa635dd15b43eb5bc94"/>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <TextView android:gravity="top|center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13px"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_no_order_yet" style="@style/textStylePoppinsmedium18"/>
+                <TextView android:gravity="top|center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_31px"
+                    android:layout_marginStart="@dimen/_31px"
+                    android:layout_marginTop="@dimen/_11px"
+                    android:layout_width="match_parent"
+                    android:text="@string/msg_browse_restaura" style="@style/textStylePoppinsregular14_1"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:gravity="center"
+                    android:id="@+id/btnOrderNow"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_100px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_12px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_15px"
+                    android:text="@string/lbl_order_now" style="@style/textStylePoppinsmedium14_1"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

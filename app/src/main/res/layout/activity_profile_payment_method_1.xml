@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profilePaymentMethod1VM" type="com.wqes.app.modules.profilepaymentmethod1.data.viewmodel.ProfilePaymentMethod1VM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_20px" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout android:layout_gravity="start"
+                android:layout_height="@dimen/_22px"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylered_300">
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_17px"
+                    android:layout_width="@dimen/_10px" android:src="@drawable/_2d7e37f470e288bf99df74248282992f"/>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23px"
+                    android:layout_weight="0.94"
+                    android:layout_width="0dp"
+                    android:text="@string/lbl_payment_method" style="@style/textStylePoppinsmedium18_1"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:fillViewport="true"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_58px"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_40px"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.37"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_your_saved_card" style="@style/textStylePoppinssemibold16"/>
+                    <TextView android:gravity="top|end"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_add_new" style="@style/textStylePoppinsregular16_2"/>
+                </LinearLayout>
+                <HorizontalScrollView android:fillViewport="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16px"
+                    android:layout_width="match_parent" android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <FrameLayout
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" style="@style/groupStyle_2">
+                            <ImageView android:layout_gravity="center"
+                                android:layout_height="@dimen/_186px"
+                                android:layout_width="@dimen/_354px"
+                                android:scaleType="fitCenter"
+                                cornerRadius="@{@dimen/_25px}" imageRes="@{@drawable/_d6b1b241562971c5c406298f96685976c238d556}"/>
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" android:orientation="vertical">
+                                <TextView android:gravity="top|start"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/lbl_master_card" style="@style/textStyleRobotobold16"/>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_17px"
+                                    android:layout_width="wrap_content"
+                                    app:cardBackgroundColor="@color/black_900"
+                                    app:cardCornerRadius="@dimen/_4px"
+                                    app:cardElevation="@dimen/_1px"
+                                    app:cardUseCompatPadding="true" style="@style/groupStyleblack_1">
+                                    <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_26px"
+                                    android:layout_width="@dimen/_40px"
+                                    android:scaleType="fitCenter" android:src="@drawable/_fa87eaba571af9b5298bbe194e2ef2cbd6e6259e"/>
+                                </com.google.android.material.card.MaterialCardView>
+                                <TextView android:gravity="top|start"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_21px"
+                                    android:layout_width="match_parent"
+                                    android:text="@string/msg_xxxx_xxxx_xxx" style="@style/textStyleRobotoregular20"/>
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_19px"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <TextView
+                                    android:gravity="top|start"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:layout_width="0dp"
+                                    android:text="@string/lbl_chery_poal" style="@style/textStyleRobotoregular16"/>
+                                    <TextView android:gravity="top|end"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.66"
+                                    android:layout_width="0dp"
+                                    android:text="@string/msg_vaild_thru_xx" style="@style/textStyleRobotoregular12"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20px"
+                            android:layout_width="wrap_content" style="@style/groupStyle_2">
+                            <ImageView android:layout_gravity="center"
+                                android:layout_height="@dimen/_186px"
+                                android:layout_width="@dimen/_354px"
+                                android:scaleType="fitCenter"
+                                cornerRadius="@{@dimen/_25px}" imageRes="@{@drawable/_be98177e0b69a0a6299b74b5312325d87b994afa}"/>
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" android:orientation="vertical">
+                                <TextView android:gravity="top|start"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/lbl_master_card" style="@style/textStyleRobotobold16_1"/>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_15px"
+                                    android:layout_width="wrap_content"
+                                    app:cardBackgroundColor="@color/black_900"
+                                    app:cardCornerRadius="@dimen/_9px"
+                                    app:cardElevation="@dimen/_1px"
+                                    app:cardUseCompatPadding="true" style="@style/groupStyleblack_2">
+                                    <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_41px"
+                                    android:layout_width="@dimen/_63px"
+                                    android:scaleType="fitCenter" android:src="@drawable/_fa87eaba571af9b5298bbe194e2ef2cbd6e6259e"/>
+                                </com.google.android.material.card.MaterialCardView>
+                                <TextView android:gravity="top|start"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_17px"
+                                    android:layout_width="match_parent"
+                                    android:text="@string/msg_1212_3434_565" style="@style/textStyleRobotoregular20_1"/>
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_17px"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <TextView
+                                    android:gravity="top|start"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:layout_width="0dp"
+                                    android:text="@string/lbl_chery_poal" style="@style/textStyleRobotoregular16_1"/>
+                                    <TextView android:gravity="top|end"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.64"
+                                    android:layout_width="0dp"
+                                    android:text="@string/msg_vaild_thru_07_2" style="@style/textStyleRobotoregular12_1"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_31px"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_other" style="@style/textStylePoppinssemibold16"/>
+                <EditText
+                    android:background="@drawable/rectangle_bg_white_a700_radius_15"
+                    android:fontFamily="@font/rubik"
+                    android:gravity="top|start"
+                    android:hint="@string/msg_chery_poal_gmai"
+                    android:id="@+id/etCheryPoalGmai"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_40px"
+                    android:layout_marginTop="@dimen/_16px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_26px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_28px"
+                    android:singleLine="true"
+                    android:textColor="@color/black_800"
+                    android:textColorHint="@color/black_800"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_16px" android:textStyle="normal"/>
+                <EditText
+                    android:background="@drawable/rectangle_bg_white_a700_radius_15"
+                    android:fontFamily="@font/rubik"
+                    android:gravity="top|start"
+                    android:hint="@string/msg_poalchery143_ap"
+                    android:id="@+id/etPoalchery143Ap"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_40px"
+                    android:layout_marginTop="@dimen/_16px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_26px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_28px"
+                    android:singleLine="true"
+                    android:textColor="@color/black_800"
+                    android:textColorHint="@color/black_800"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_16px" android:textStyle="normal"/>
+                <TextView android:gravity="top|center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_40px"
+                    android:layout_marginTop="@dimen/_61px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_12px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_15px"
+                    android:text="@string/msg_add_new_payment" style="@style/textStylePoppinsmedium14_1"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

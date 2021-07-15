@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeCurrentLocationGpsVM" type="com.wqes.app.modules.homecurrentlocationgps.data.viewmodel.HomeCurrentLocationGpsVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/_30px" style="@style/groupStylewhite_A700">
+        <HorizontalScrollView android:fillViewport="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:scrollbars="none">
+            <FrameLayout android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" style="@style/groupStyle_1">
+                <FrameLayout android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" style="@style/groupStyle_1">
+                    <ImageView android:layout_gravity="center|end"
+                        android:layout_height="1000dp"
+                        android:layout_width="1777dp"
+                        android:scaleType="fitCenter" imageRes="@{@drawable/_a60b95ca57886d4d30770e2bdbcefa093d383fb3}"/>
+                    <ImageView android:layout_gravity="center|end"
+                        android:layout_height="@dimen/_543px"
+                        android:layout_width="@dimen/_413px" imageRes="@{@drawable/_88f4a53cdc3afa4529e7e9736ad0e6e5}"/>
+                </FrameLayout>
+                <LinearLayout android:layout_gravity="top|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_100px"
+                    android:layout_marginTop="@dimen/_100px"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <FrameLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content" android:layout_width="match_parent">
+                        <ImageView android:layout_gravity="center"
+                            android:layout_height="@dimen/_96px" android:layout_width="@dimen/_414px"/>
+                        <ImageView android:layout_gravity="bottom|start"
+                            android:layout_height="@dimen/_17px"
+                            android:layout_marginBottom="@dimen/_20px"
+                            android:layout_marginStart="@dimen/_20px"
+                            android:layout_marginTop="@dimen/_58px"
+                            android:layout_width="@dimen/_10px" android:src="@drawable/_f3ee32990476ecf23ff68e15dcc5dc46"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_100px" android:layout_width="wrap_content">
+                        <ImageView android:layout_gravity="top|center"
+                            android:layout_height="@dimen/_35px"
+                            android:layout_width="@dimen/_20px" android:src="@drawable/_1b6f28cb6b675bbc36f94c5976f584b7"/>
+                        <FrameLayout
+                            android:background="@color/cyan_A200"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                        <FrameLayout
+                            android:background="@color/cyan_A200"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </HorizontalScrollView>
+        <HorizontalScrollView android:fillViewport="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:scrollbars="none">
+            <LinearLayout android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/msg_select_delivery" style="@style/textStylePoppinsregular16_1"/>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16px"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_your_location" style="@style/textStylePoppinsregular12_6"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <HorizontalScrollView android:fillViewport="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:scrollbars="none">
+            <LinearLayout android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical" style="@style/groupStyle_1">
+                    <LinearLayout android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_15px"
+                            android:layout_width="@dimen/_13px" android:src="@drawable/_6b04da9d2f6b196c9102e1250a84fbe3"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_gwarinpa" style="@style/textStylePoppinsregular14"/>
+                    </LinearLayout>
+                    <View android:background="@color/black_300"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginTop="@dimen/_7px" android:layout_width="@dimen/_374px"/>
+                </LinearLayout>
+                <TextView android:gravity="top|center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30px"
+                    android:layout_width="wrap_content"
+                    android:paddingBottom="@dimen/_12px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_15px"
+                    android:text="@string/msg_confirm_locatio" style="@style/textStylePoppinsmedium14_1"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <TextView android:gravity="top|end"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14" android:layout_width="0dp"
+            android:text="@string/lbl_change" style="@style/textStylePoppinsregular14_2"/>
+    </LinearLayout>
+</layout>

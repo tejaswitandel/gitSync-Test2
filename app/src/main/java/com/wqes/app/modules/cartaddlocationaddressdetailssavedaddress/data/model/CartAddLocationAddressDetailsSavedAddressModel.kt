@@ -1,0 +1,3 @@
+package com.wqes.app.modules.cartaddlocationaddressdetailssavedaddress.`data`.model
+
+public class CartAddLocationAddressDetailsSavedAddressModel

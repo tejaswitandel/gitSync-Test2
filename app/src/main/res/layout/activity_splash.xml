@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashVM" type="com.wqes.app.modules.splash.data.viewmodel.SplashVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle_1">
+        <FrameLayout android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" style="@style/groupStyleblack_900">
+            <ImageView android:layout_gravity="center"
+                android:layout_height="@dimen/_605px"
+                android:layout_width="match_parent"
+                android:scaleType="fitCenter" imageRes="@{@drawable/_fd5e9de837058111eeefb7e3b73f72e18d4ec8b8}"/>
+            <FrameLayout android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" style="@style/groupStyle_1">
+                <FrameLayout android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_100px"
+                    android:layout_marginTop="@dimen/_100px"
+                    android:layout_width="match_parent" style="@style/groupStyle_1">
+                    <ImageView android:layout_gravity="top|center"
+                        android:layout_height="@dimen/_52px"
+                        android:layout_width="@dimen/_49px" imageRes="@{@drawable/_d2db033af847aa6ba1c9b70992c5207f}"/>
+                    <ImageView android:layout_gravity="center"
+                        android:layout_height="@dimen/_141px"
+                        android:layout_width="@dimen/_210px" imageRes="@{@drawable/_740701620e33b0b11020b9b9705335a0}"/>
+                    <FrameLayout android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" style="@style/groupStyle_1">
+                        <FrameLayout android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" style="@style/groupStyle_1">
+                            <ImageView android:layout_gravity="center"
+                                android:layout_height="@dimen/_67px"
+                                android:layout_width="@dimen/_165px"
+                                android:scaleType="fitCenter" imageRes="@{@drawable/_45f2d2a38488c56e017337bcc0898c0e68c15f38}"/>
+                            <ImageView android:layout_gravity="center"
+                                android:layout_height="@dimen/_55px"
+                                android:layout_width="@dimen/_152px" imageRes="@{@drawable/_c6193aae0da650a5636e97dd9f5c6167}"/>
+                        </FrameLayout>
+                        <FrameLayout android:layout_gravity="center"
+                            android:layout_height="wrap_content" android:layout_width="match_parent">
+                            <FrameLayout android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" style="@style/groupStyle_1">
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_59px"
+                                    android:layout_width="@dimen/_156px"
+                                    android:scaleType="fitCenter" imageRes="@{@drawable/_1424e7fc4e344de822cf2ac026383ace3b1255d6}"/>
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_55px"
+                                    android:layout_width="@dimen/_152px" imageRes="@{@drawable/_a4d6f014920ad61e171833c45c6871e8}"/>
+                            </FrameLayout>
+                            <FrameLayout android:layout_gravity="center"
+                                android:layout_height="wrap_content" android:layout_width="match_parent">
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_56px"
+                                    android:layout_width="@dimen/_153px" imageRes="@{@drawable/_24dc877c7075d13a330e1cd43224d3ed}"/>
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_55px"
+                                    android:layout_width="@dimen/_152px" imageRes="@{@drawable/_7265d48c4fb5c012c47112bd73f4f9bc}"/>
+                            </FrameLayout>
+                        </FrameLayout>
+                    </FrameLayout>
+                </FrameLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileDisputes1VM" type="com.wqes.app.modules.profiledisputes1.data.viewmodel.ProfileDisputes1VM"/>
+    </data>
+    <FrameLayout android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyleblack_900">
+        <ImageView android:layout_gravity="center"
+            android:layout_height="@dimen/_736px" android:layout_width="@dimen/_413px"/>
+        <LinearLayout android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <TextView android:gravity="top|center"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/msg_swipe_right_to" style="@style/textStylePoppinsmedium15"/>
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_18px"
+                android:layout_marginStart="@dimen/_18px"
+                android:layout_width="@dimen/_10px" android:src="@drawable/_a0f266dc11f81f191355847a4cef8ad1"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

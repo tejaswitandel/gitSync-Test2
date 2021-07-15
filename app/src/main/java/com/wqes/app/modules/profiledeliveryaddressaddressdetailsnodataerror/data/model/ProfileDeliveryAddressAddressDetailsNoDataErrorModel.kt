@@ -1,0 +1,3 @@
+package com.wqes.app.modules.profiledeliveryaddressaddressdetailsnodataerror.`data`.model
+
+public class ProfileDeliveryAddressAddressDetailsNoDataErrorModel

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileSettingFaqsVM" type="com.wqes.app.modules.profilesettingfaqs.data.viewmodel.ProfileSettingFaqsVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_57px"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylered_300">
+            <LinearLayout android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_17px"
+                    android:layout_width="@dimen/_10px" android:src="@drawable/_2d7e37f470e288bf99df74248282992f"/>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23px"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_faqs" style="@style/textStylePoppinsmedium18_1"/>
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_26px" android:layout_width="match_parent">
+                <ImageView android:layout_gravity="center"
+                    android:layout_height="@dimen/_48px"
+                    android:layout_width="@dimen/_374px" android:src="@drawable/_37e354d3a2ec52659f7a6c43b6f8cd1f"/>
+                <EditText
+                    android:background="@drawable/rectangle_bg_white_a700_border_white_a400_radius_20"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="top|start"
+                    android:hint="@string/msg_how_can_we_help"
+                    android:id="@+id/etHowCanWeHelp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_7px"
+                    android:paddingStart="@dimen/_19px"
+                    android:paddingTop="@dimen/_10px"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_600"
+                    android:textColorHint="@color/gray_600"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14px" android:textStyle="normal"/>
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_38px"
+            android:layout_width="match_parent" style="@style/groupStyle_1">
+            <EditText
+                android:background="@drawable/rectangle_bg_white_a700"
+                android:fontFamily="@font/rubik"
+                android:gravity="top|start"
+                android:hint="@string/msg_what_is_the_mea"
+                android:id="@+id/etWhatIsTheMea"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_12px"
+                android:paddingTop="@dimen/_12px"
+                android:singleLine="true"
+                android:textColor="@color/black_800"
+                android:textColorHint="@color/black_800"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14px" android:textStyle="normal"/>
+            <View android:layout_gravity="center"
+                android:layout_height="@dimen/_1px" android:layout_width="match_parent"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <FrameLayout android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12px" android:layout_width="match_parent">
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center|start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/msg_why_is_lorem_ip" style="@style/textStyleRubikregular14"/>
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/seekBar"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:value="100" android:valueFrom="0"
+                    android:valueTo="100" app:labelBehavior="gone"
+                    app:thumbColor="@color/#ff1d1d1d"
+                    app:thumbRadius="@dimen/_6px" app:trackHeight="@dimen/_6px"/>
+            </FrameLayout>
+            <TextView android:gravity="top|start"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_33px"
+                android:layout_marginTop="@dimen/_11px"
+                android:layout_width="match_parent"
+                android:text="@string/msg_lorem_ipsum_is" style="@style/textStylePoppinslight12"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_width="match_parent" style="@style/groupStyle_1">
+            <EditText
+                android:background="@drawable/rectangle_bg_white_a700"
+                android:fontFamily="@font/rubik"
+                android:gravity="top|start"
+                android:hint="@string/msg_what_is_the_mos"
+                android:id="@+id/etWhatIsTheMos"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_12px"
+                android:paddingTop="@dimen/_12px"
+                android:singleLine="true"
+                android:textColor="@color/black_800"
+                android:textColorHint="@color/black_800"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14px" android:textStyle="normal"/>
+            <ImageView android:layout_gravity="center"
+                android:layout_height="@dimen/_5px" android:layout_width="@dimen/_374px"/>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_width="match_parent" style="@style/groupStyle_1">
+            <EditText
+                android:background="@drawable/rectangle_bg_white_a700"
+                android:fontFamily="@font/rubik"
+                android:gravity="top|start"
+                android:hint="@string/msg_why_is_lorem_ip"
+                android:id="@+id/etWhyIsLoremIp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_12px"
+                android:paddingTop="@dimen/_12px"
+                android:singleLine="true"
+                android:textColor="@color/black_800"
+                android:textColorHint="@color/black_800"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14px" android:textStyle="normal"/>
+            <ImageView android:layout_gravity="center"
+                android:layout_height="@dimen/_5px" android:layout_width="@dimen/_374px"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

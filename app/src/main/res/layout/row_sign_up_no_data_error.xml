@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="signUpNoDataErrorRowModel" type="com.wqes.app.modules.signupnodataerror.data.model.SignUpNoDataErrorRowModel"/>
+    </data>
+    <FrameLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" style="@style/groupStyle_1">
+        <com.google.android.material.textfield.TextInputLayout
+            android:gravity="top|start" android:hint="@string/lbl_city"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_30px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingTop="@dimen/_1px"
+            android:textColorHint="@color/gray_600" style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:fontFamily="@font/poppins"
+                android:id="@+id/etCity"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@={signUpNoDataErrorRowModel.etCityValue}"
+                android:textColor="@color/gray_600"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14px" android:textStyle="normal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtCity" android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@{signUpNoDataErrorRowModel.txtCity}" style="@style/textStylePoppinsregular14_1"/>
+            <ImageView android:layout_gravity="end"
+                android:layout_height="@dimen/_7px"
+                android:layout_marginTop="@dimen/_17px"
+                android:layout_width="@dimen/_12px" android:src="@drawable/_b00e2b5e47bf6f62abf82951dfed308e"/>
+            <View android:background="@color/bluegray_200"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1px"
+                android:layout_marginTop="@dimen/_16px" android:layout_width="match_parent"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

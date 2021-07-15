@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="cartAddLocationAddressDetailsSavedAddressRowModel" type="com.wqes.app.modules.cartaddlocationaddressdetailssavedaddress.data.model.CartAddLocationAddressDetailsSavedAddressRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+        <TextView android:gravity="top|start" android:id="@+id/txtGym"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_20px"
+            android:layout_width="wrap_content"
+            android:text="@{cartAddLocationAddressDetailsSavedAddressRowModel.txtGym}" style="@style/textStylePoppinsmedium14_3"/>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_19px"
+            android:layout_marginStart="@dimen/_19px"
+            android:layout_marginTop="@dimen/_8px"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_15px"
+                android:layout_width="@dimen/_13px" android:src="@drawable/_cec47a15119a01d1b0162e197aef1c97"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txt4PpMarketG"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11px"
+                android:layout_weight="0.93" android:layout_width="0dp"
+                android:text="@{cartAddLocationAddressDetailsSavedAddressRowModel.txt4PpMarketG}" style="@style/textStylePoppinsregular12_1"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

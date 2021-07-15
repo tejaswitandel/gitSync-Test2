@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileDisputesMyDisputes1RowModel" type="com.wqes.app.modules.profiledisputesmydisputes1.data.model.ProfileDisputesMyDisputes1RowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_20px"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtPizzaHut"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.19" android:layout_width="0dp"
+                android:text="@{profileDisputesMyDisputes1RowModel.txtPizzaHut}" style="@style/textStylePoppinsregular14"/>
+            <TextView android:gravity="top|end"
+                android:id="@+id/txtDelivered"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" android:layout_width="0dp"
+                android:text="@{profileDisputesMyDisputes1RowModel.txtDelivered}" style="@style/textStylePoppinsregular14_3"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_19px"
+            android:layout_marginStart="@dimen/_19px"
+            android:layout_marginTop="@dimen/_5px"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtGwarinpaAbuja"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.31" android:layout_width="0dp"
+                android:text="@{profileDisputesMyDisputes1RowModel.txtGwarinpaAbuja}" style="@style/textStylePoppinsregular12_6"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtFood00007"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.54" android:layout_width="0dp"
+                android:text="@{profileDisputesMyDisputes1RowModel.txtFood00007}" style="@style/textStylePoppinsregular12_7"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" android:layout_width="0dp"
+                app:cardBackgroundColor="@color/black_900"
+                app:cardCornerRadius="@dimen/_5px"
+                app:cardElevation="@dimen/_1px"
+                app:cardUseCompatPadding="true" style="@style/groupStyleblack_900cornerRadius">
+                <ImageView android:layout_gravity="center"
+                    android:layout_height="@dimen/_34px"
+                    android:layout_width="@dimen/_34px"
+                    android:scaleType="fitCenter" android:src="@drawable/_ec7139284553503084165b7b11cb1f6807ade345"/>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2px"
+                android:layout_weight="0.11" android:layout_width="0dp"
+                app:cardBackgroundColor="@color/black_900"
+                app:cardCornerRadius="@dimen/_5px"
+                app:cardElevation="@dimen/_1px"
+                app:cardUseCompatPadding="true" style="@style/groupStyleblack_900cornerRadius">
+                <ImageView android:layout_gravity="center"
+                    android:layout_height="@dimen/_34px"
+                    android:layout_width="@dimen/_34px"
+                    android:scaleType="fitCenter" android:src="@drawable/_09f0d1221db3fc4b55fa6d5a36d0daa821307c56"/>
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20px"
+                android:layout_weight="0.45" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtFri1July08"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{profileDisputesMyDisputes1RowModel.txtFri1July08}" style="@style/textStylePoppinsregular14"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txt4Items"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5px"
+                    android:layout_width="match_parent"
+                    android:text="@{profileDisputesMyDisputes1RowModel.txt4Items}" style="@style/textStylePoppinsregular12_6"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.34" android:layout_width="0dp"
+                android:orientation="horizontal" style="@style/groupStyle_1">
+                <ImageView android:layout_gravity="top"
+                    android:layout_height="@dimen/_10px"
+                    android:layout_width="@dimen/_11px" android:src="@drawable/_b617c478256857efd957955c3cfa584a"/>
+                <TextView android:gravity="top|end"
+                    android:id="@+id/txt50" android:layout_gravity="top"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2px"
+                    android:layout_weight="0.68"
+                    android:layout_width="0dp"
+                    android:text="@{profileDisputesMyDisputes1RowModel.txt50}" style="@style/textStylePoppinsregular14_4"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20px"
+            android:layout_marginStart="@dimen/_20px"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:cardBackgroundColor="@color/black_900"
+                app:cardCornerRadius="@dimen/_5px"
+                app:cardElevation="@dimen/_1px"
+                app:cardUseCompatPadding="true" style="@style/groupStyleblack_900cornerRadius">
+                <ImageView android:layout_gravity="center"
+                    android:layout_height="@dimen/_34px"
+                    android:layout_width="@dimen/_34px"
+                    android:scaleType="fitCenter" android:src="@drawable/_823a510cce413cd39b94a4cbad29cd0068b8c6e2"/>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2px"
+                android:layout_width="wrap_content"
+                app:cardBackgroundColor="@color/black_900"
+                app:cardCornerRadius="@dimen/_5px"
+                app:cardElevation="@dimen/_1px"
+                app:cardUseCompatPadding="true" style="@style/groupStyleblack_900cornerRadius">
+                <ImageView android:layout_gravity="center"
+                    android:layout_height="@dimen/_34px"
+                    android:layout_width="@dimen/_34px"
+                    android:scaleType="fitCenter" android:src="@drawable/_7820b40aec36232f1e9a8422085dabb6960861ac"/>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txt775" android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20px"
+                android:layout_width="wrap_content"
+                android:text="@{profileDisputesMyDisputes1RowModel.txt775}" style="@style/textStylePoppinsregular14"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18px" android:layout_width="match_parent">
+            <FrameLayout
+                android:background="@drawable/rectangle_bg_gray_50_radius_bl_15_br_15"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <TextView android:gravity="top|end"
+                android:id="@+id/txtPending"
+                android:layout_gravity="top|end"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_60px"
+                android:layout_marginEnd="@dimen/_20px"
+                android:layout_marginTop="@dimen/_11px"
+                android:layout_width="wrap_content"
+                android:text="@{profileDisputesMyDisputes1RowModel.txtPending}" style="@style/textStylePoppinsregular12_2"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtIefood00007"
+                android:layout_gravity="top|center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13px"
+                android:layout_width="wrap_content"
+                android:text="@{profileDisputesMyDisputes1RowModel.txtIefood00007}" style="@style/textStylePoppinsregular12_7"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtIssuesId"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_62px"
+                android:layout_marginStart="@dimen/_20px"
+                android:layout_marginTop="@dimen/_13px"
+                android:layout_width="wrap_content"
+                android:text="@{profileDisputesMyDisputes1RowModel.txtIssuesId}" style="@style/textStylePoppinsregular12_1"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtDeliveryPerson"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@{profileDisputesMyDisputes1RowModel.txtDeliveryPerson}" style="@style/textStylePoppinsregular14"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtInappropriateB"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_11px"
+                android:layout_marginStart="@dimen/_21px"
+                android:layout_marginTop="@dimen/_64px"
+                android:layout_width="wrap_content"
+                android:text="@{profileDisputesMyDisputes1RowModel.txtInappropriateB}" style="@style/textStylePoppinsregular12_1"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

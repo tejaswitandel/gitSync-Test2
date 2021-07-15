@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onboarding3VM" type="com.wqes.app.modules.onboarding3.data.viewmodel.Onboarding3VM"/>
+    </data>
+    <FrameLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingEnd="@dimen/_17px" style="@style/groupStylewhite_A700">
+        <ImageView android:layout_gravity="top|center"
+            android:layout_height="@dimen/_333px"
+            android:layout_width="@dimen/_500px"
+            android:scaleType="fitCenter" imageRes="@{@drawable/_59268adf5b7f5e504681952e51746578a8b847f7}"/>
+        <LinearLayout android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_29px"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle">
+            <TextView android:gravity="top|center"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/lbl_perfect_meals" style="@style/textStylePoppinssemibold24"/>
+            <TextView android:gravity="top|center"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_13px"
+                android:layout_marginStart="@dimen/_13px"
+                android:layout_marginTop="@dimen/_16px"
+                android:layout_width="match_parent"
+                android:text="@string/msg_tasty_home_cook" style="@style/textStylePoppinslight14"/>
+            <ImageView android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_10px"
+                android:layout_marginTop="@dimen/_45px"
+                android:layout_width="@dimen/_68px" android:src="@drawable/_95dd19f277696cbb58aa57ff3b86099e"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:gravity="bottom|center"
+                android:id="@+id/btnGetStarted"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_81px"
+                android:layout_width="match_parent"
+                android:paddingEnd="@dimen/_30px"
+                android:paddingStart="@dimen/_30px"
+                android:paddingTop="@dimen/_15px"
+                android:text="@string/lbl_get_started" style="@style/textStylePoppinsmedium14_1"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

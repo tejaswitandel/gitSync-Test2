@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeRestaurantsProfileAndDetailsReview3RowModel" type="com.wqes.app.modules.homerestaurantsprofileanddetailsreview1.data.model.HomeRestaurantsProfileAndDetailsReview3RowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal" style="@style/groupStyle_1">
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtOrderPackaging"
+            android:layout_gravity="top"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@{homeRestaurantsProfileAndDetailsReview3RowModel.txtOrderPackaging}" style="@style/textStylePoppinsregular8"/>
+        <ImageView android:layout_gravity="top"
+            android:layout_height="@dimen/_10px"
+            android:layout_marginStart="@dimen/_5px"
+            android:layout_width="@dimen/_61px" android:src="@drawable/_c0af00ef104c753b7fd7d31ec1c1c91e"/>
+        <ImageView android:layout_gravity="top"
+            android:layout_height="@dimen/_10px"
+            android:layout_marginStart="@dimen/_6px"
+            android:layout_width="@dimen/_10px" android:src="@drawable/_3e87b8ceba2d1ef48834a78290e58293"/>
+    </LinearLayout>
+</layout>

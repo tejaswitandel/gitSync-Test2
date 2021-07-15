@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileMyOrderHistoryRowModel" type="com.wqes.app.modules.profilemyorderhistory.data.model.ProfileMyOrderHistoryRowModel"/>
+    </data>
+    <TextView android:gravity="top|start" android:id="@+id/txtPizzaHut"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@{profileMyOrderHistoryRowModel.txtPizzaHut}" style="@style/textStylePoppinsregular14"/>
+</layout>

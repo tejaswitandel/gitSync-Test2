@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeRestaurantsProfileAndDetailsReviewRowModel" type="com.wqes.app.modules.homerestaurantsprofileanddetailsreview.data.model.HomeRestaurantsProfileAndDetailsReviewRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStyle_1">
+        <FrameLayout android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent" android:layout_width="match_parent">
+            <ImageView android:layout_gravity="center"
+                android:layout_height="@dimen/_110px"
+                android:layout_width="@dimen/_110px" imageRes="@{@drawable/_d9e70e0efb90a9ef533c0dd71f88975a}"/>
+            <FrameLayout
+                android:background="@drawable/oval_border_bluegray_200"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <LinearLayout android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal" style="@style/groupStyle_1">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txt45"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@{homeRestaurantsProfileAndDetailsReviewRowModel.txt45}" style="@style/textStyleRobotomedium26"/>
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_23px"
+                    android:layout_marginStart="@dimen/_4px"
+                    android:layout_width="@dimen/_25px" android:src="@drawable/_11bb06208fb89ad6d9492edbd1b1a3e1"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

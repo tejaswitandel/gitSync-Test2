@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cartPaymentMethodCurrencyNotesPopupVM" type="com.wqes.app.modules.cartpaymentmethodcurrencynotespopup.data.viewmodel.CartPaymentMethodCurrencyNotesPopupVM"/>
+    </data>
+    <FrameLayout android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyleblack_900">
+        <FrameLayout android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" style="@style/groupStyle_1">
+            <LinearLayout android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8px"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylewhite_4">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:gravity="top|center"
+                    android:id="@+id/btnCancel"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.46"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_4px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_7px"
+                    android:text="@string/lbl_cancel" style="@style/textStylePoppinsmedium14_2"/>
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_45px"
+                    android:layout_marginStart="@dimen/_20px"
+                    android:layout_width="@dimen/_120px" android:src="@drawable/_3f4fec70a34360c55f5934d3c53718f9"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5px"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.44"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_currency_notes" style="@style/textStylePoppinssemibold14"/>
+                    <ImageView android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_12px"
+                        android:layout_width="@dimen/_12px" android:src="@drawable/_e498e1cca17c6c0d4f05926b7c365c4f"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_17px"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle_1">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_1000" style="@style/textStylePoppinsregular14_1"/>
+                    <FrameLayout
+                        android:background="@drawable/oval_bg_white_a700_border_gray_600_radius_4"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.44" android:layout_width="0dp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle_1">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.13"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_500" style="@style/textStylePoppinsregular14_1"/>
+                    <FrameLayout
+                        android:background="@drawable/oval_bg_white_a700_border_gray_600_radius_4"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.44" android:layout_width="0dp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle_1">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.13"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_200" style="@style/textStylePoppinsmedium14_3"/>
+                    <ImageView android:layout_gravity="top"
+                        android:layout_height="@dimen/_14px" android:layout_width="@dimen/_14px"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle_1">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.12"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_100" style="@style/textStylePoppinsmedium14_3"/>
+                    <ImageView android:layout_gravity="top"
+                        android:layout_height="@dimen/_14px" android:layout_width="@dimen/_14px"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle_1">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_501" style="@style/textStylePoppinsmedium14_3"/>
+                    <ImageView android:layout_gravity="top"
+                        android:layout_height="@dimen/_14px" android:layout_width="@dimen/_14px"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle_1">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_201" style="@style/textStylePoppinsregular14_1"/>
+                    <FrameLayout
+                        android:background="@drawable/oval_bg_white_a700_border_gray_600_radius_4"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.44" android:layout_width="0dp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle_1">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.08"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_10" style="@style/textStylePoppinsregular14_1"/>
+                    <FrameLayout
+                        android:background="@drawable/oval_bg_white_a700_border_gray_600_radius_4"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.44" android:layout_width="0dp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle_1">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.07"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_5" style="@style/textStylePoppinsregular14_1"/>
+                    <FrameLayout
+                        android:background="@drawable/oval_bg_white_a700_border_gray_600_radius_4"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.44" android:layout_width="0dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:gravity="center" android:id="@+id/btnDone"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_100px"
+            android:layout_marginTop="@dimen/_100px"
+            android:layout_width="wrap_content"
+            android:paddingBottom="@dimen/_4px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_7px"
+            android:text="@string/lbl_done" style="@style/textStylePoppinsmedium14_1"/>
+    </FrameLayout>
+</layout>

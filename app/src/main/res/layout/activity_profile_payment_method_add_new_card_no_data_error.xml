@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profilePaymentMethodAddNewCardNoDataErrorVM" type="com.wqes.app.modules.profilepaymentmethodaddnewcardnodataerror.data.viewmodel.ProfilePaymentMethodAddNewCardNoDataErrorVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" android:paddingEnd="@dimen/_20px"
+        android:paddingStart="@dimen/_20px" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_22px"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylered_300">
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_17px"
+                    android:layout_width="@dimen/_10px" android:src="@drawable/_2d7e37f470e288bf99df74248282992f"/>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23px"
+                    android:layout_weight="0.41"
+                    android:layout_width="0dp"
+                    android:text="@string/lbl_add_new_card" style="@style/textStylePoppinsmedium18_1"/>
+                <TextView android:gravity="top|end"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.42"
+                    android:layout_width="0dp"
+                    android:text="@string/lbl_cancel" style="@style/textStylePoppinsregular16"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:fillViewport="true"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_52px"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle_1">
+                    <FrameLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" style="@style/groupStyle_1">
+                        <ImageView android:layout_gravity="center"
+                            android:layout_height="@dimen/_197px"
+                            android:layout_width="@dimen/_373px"
+                            android:scaleType="fitCenter"
+                            cornerRadius="@{@dimen/_25px}" imageRes="@{@drawable/_d6b1b241562971c5c406298f96685976c238d556}"/>
+                        <FrameLayout android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" style="@style/groupStyle_1">
+                            <ImageView android:layout_gravity="center"
+                                android:layout_height="@dimen/_197px" android:layout_width="@dimen/_374px"/>
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" android:orientation="vertical">
+                                <TextView android:gravity="top|start"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/lbl_credit_card" style="@style/textStyleRobotobold16"/>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_20px"
+                                    android:layout_width="wrap_content"
+                                    app:cardBackgroundColor="@color/black_900"
+                                    app:cardCornerRadius="@dimen/_4px"
+                                    app:cardElevation="@dimen/_1px"
+                                    app:cardUseCompatPadding="true" style="@style/groupStyleblack_1">
+                                    <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_26px"
+                                    android:layout_width="@dimen/_40px"
+                                    android:scaleType="fitCenter" android:src="@drawable/_fa87eaba571af9b5298bbe194e2ef2cbd6e6259e"/>
+                                </com.google.android.material.card.MaterialCardView>
+                                <TextView android:gravity="top|start"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_22px"
+                                    android:layout_width="match_parent"
+                                    android:text="@string/msg_xxxx_xxxx_xxx" style="@style/textStyleRobotoregular20"/>
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_22px"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <TextView
+                                    android:gravity="top|start"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.28"
+                                    android:layout_width="0dp"
+                                    android:text="@string/lbl_chery_poal" style="@style/textStyleRobotoregular16"/>
+                                    <TextView android:gravity="top|end"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.62"
+                                    android:layout_width="0dp"
+                                    android:text="@string/msg_vaild_thru_xx" style="@style/textStyleRobotoregular12"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="top|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_100px"
+                            android:layout_marginStart="@dimen/_19px"
+                            android:layout_marginTop="@dimen/_17px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_master_card" style="@style/textStyleRobotobold16"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="top|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_100px"
+                            android:layout_marginStart="@dimen/_19px"
+                            android:layout_marginTop="@dimen/_21px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_credit_card" style="@style/textStyleRobotobold16"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_gravity="center|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_19px"
+                            android:layout_width="wrap_content"
+                            app:cardBackgroundColor="@color/black_900"
+                            app:cardCornerRadius="@dimen/_4px"
+                            app:cardElevation="@dimen/_1px"
+                            app:cardUseCompatPadding="true" style="@style/groupStyleblack_1">
+                            <ImageView android:layout_gravity="center"
+                                android:layout_height="@dimen/_26px"
+                                android:layout_width="@dimen/_40px"
+                                android:scaleType="fitCenter" android:src="@drawable/_fa87eaba571af9b5298bbe194e2ef2cbd6e6259e"/>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_gravity="center|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_19px"
+                            android:layout_width="wrap_content"
+                            app:cardBackgroundColor="@color/black_900"
+                            app:cardCornerRadius="@dimen/_4px"
+                            app:cardElevation="@dimen/_1px"
+                            app:cardUseCompatPadding="true" style="@style/groupStyleblack_1">
+                            <ImageView android:layout_gravity="center"
+                                android:layout_height="@dimen/_26px"
+                                android:layout_width="@dimen/_40px"
+                                android:scaleType="fitCenter" android:src="@drawable/_fa87eaba571af9b5298bbe194e2ef2cbd6e6259e"/>
+                        </com.google.android.material.card.MaterialCardView>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/msg_xxxx_xxxx_xxx" style="@style/textStyleRobotoregular20"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/msg_xxxx_xxxx_xxx" style="@style/textStyleRobotoregular20"/>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="bottom|end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_27px"
+                            android:layout_marginEnd="@dimen/_20px"
+                            android:layout_marginTop="@dimen/_100px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/msg_vaild_thru_xx" style="@style/textStyleRobotoregular12"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_24px"
+                            android:layout_marginStart="@dimen/_19px"
+                            android:layout_marginTop="@dimen/_100px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_chery_poal" style="@style/textStyleRobotoregular16"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_19px"
+                            android:layout_marginStart="@dimen/_19px"
+                            android:layout_marginTop="@dimen/_100px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_chery_poal" style="@style/textStyleRobotoregular16"/>
+                        <TextView android:gravity="top|end"
+                            android:layout_gravity="bottom|end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_17px"
+                            android:layout_marginEnd="@dimen/_20px"
+                            android:layout_marginTop="@dimen/_100px"
+                            android:layout_width="wrap_content"
+                            android:text="@string/msg_vaild_thru_xx" style="@style/textStyleRobotoregular12"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:gravity="top|start"
+                    android:hint="@string/lbl_card_number"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_26px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_30px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingTop="@dimen/_1px"
+                    android:textColorHint="@color/gray_600" style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/etCardNumber"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@string/lbl_card_number"
+                        android:textColor="@color/gray_600"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14px" android:textStyle="normal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:gravity="top|start"
+                    android:hint="@string/msg_card_holder_nam"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_19px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_30px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingTop="@dimen/_1px"
+                    android:textColorHint="@color/gray_600" style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/etCardHolderNam"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@string/msg_card_holder_nam"
+                        android:textColor="@color/gray_600"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14px" android:textStyle="normal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:gravity="top|start"
+                    android:hint="@string/lbl_vaild_thru"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_19px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_30px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingTop="@dimen/_1px"
+                    android:textColorHint="@color/gray_600" style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/etVaildThru"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@string/lbl_vaild_thru"
+                        android:textColor="@color/gray_600"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14px" android:textStyle="normal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:gravity="top|start"
+                    android:hint="@string/lbl_cvv"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_19px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_30px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingTop="@dimen/_1px"
+                    android:textColorHint="@color/gray_600" style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/etCvv"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@string/lbl_cvv"
+                        android:textColor="@color/gray_600"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14px" android:textStyle="normal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:gravity="center" android:id="@+id/btnSave"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_29px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_12px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_15px"
+                    android:text="@string/lbl_save" style="@style/textStylePoppinsmedium14_1"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

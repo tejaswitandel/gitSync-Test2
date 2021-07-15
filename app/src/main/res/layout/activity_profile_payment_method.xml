@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profilePaymentMethodVM" type="com.wqes.app.modules.profilepaymentmethod.data.viewmodel.ProfilePaymentMethodVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" android:paddingEnd="@dimen/_20px"
+        android:paddingStart="@dimen/_20px" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout android:layout_gravity="start"
+                android:layout_height="@dimen/_22px"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylered_300">
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_17px"
+                    android:layout_width="@dimen/_10px" android:src="@drawable/_2d7e37f470e288bf99df74248282992f"/>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23px"
+                    android:layout_weight="0.94"
+                    android:layout_width="0dp"
+                    android:text="@string/lbl_payment_method" style="@style/textStylePoppinsmedium18_1"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:fillViewport="true"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_100px"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_266px"
+                    android:layout_width="@dimen/_266px" imageRes="@{@drawable/_4bfe45752f6013d7cb8042ec93887c1c}"/>
+                <TextView android:gravity="top|center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13px"
+                    android:layout_width="wrap_content"
+                    android:text="@string/msg_no_payment_meth" style="@style/textStylePoppinsmedium18"/>
+                <TextView android:gravity="top|center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_14px"
+                    android:layout_marginStart="@dimen/_14px"
+                    android:layout_marginTop="@dimen/_11px"
+                    android:layout_width="match_parent"
+                    android:text="@string/msg_add_payment_met" style="@style/textStylePoppinsregular14_1"/>
+                <TextView android:gravity="top|center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_100px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_12px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_15px"
+                    android:text="@string/msg_add_new_payment" style="@style/textStylePoppinsmedium14_1"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileNotificationsRowModel" type="com.wqes.app.modules.profilenotifications.data.model.ProfileNotificationsRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_20px"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.21" android:layout_width="0dp"
+                app:cardBackgroundColor="@color/black_900"
+                app:cardCornerRadius="@dimen/_5px"
+                app:cardElevation="@dimen/_1px"
+                app:cardUseCompatPadding="true" style="@style/groupStyleblack_900cornerRadius">
+                <ImageView android:layout_gravity="center"
+                    android:layout_height="@dimen/_70px"
+                    android:layout_width="@dimen/_70px"
+                    android:scaleType="fitCenter" imageRes="@{@drawable/_ec7139284553503084165b7b11cb1f6807ade345}"/>
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20px"
+                android:layout_weight="0.79" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtYourOrder358"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{profileNotificationsRowModel.txtYourOrder358}" style="@style/textStylePoppinsregular14"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txt2DaysAgo"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8px"
+                    android:layout_width="wrap_content"
+                    android:text="@{profileNotificationsRowModel.txt2DaysAgo}" style="@style/textStylePoppinsregular12_6"/>
+            </LinearLayout>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtDelivered"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" android:layout_width="0dp"
+                android:text="@{profileNotificationsRowModel.txtDelivered}" style="@style/textStylePoppinsmedium14_3"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

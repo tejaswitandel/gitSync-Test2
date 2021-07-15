@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.wqes.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.wqes.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" android:name="com.facebook.FacebookActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wqes.app.modules.cartordertrackingorderdetailextratip.ui.CartOrderTrackingOrderDetailExtraTipActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.forgotpassworddataerror.ui.ForgotPasswordDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilemyorderhistory1.ui.ProfileMyOrderHistory1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cartofferspromocode.ui.CartOffersPromoCodeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homesearchsearchresultnofound1.ui.HomeSearchSearchResultNoFound1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homecurrentlocation.ui.HomeCurrentLocationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilefavouriteorders.ui.ProfileFavouriteOrdersActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilemyorderhistoryempty1.ui.ProfileMyOrderHistoryEmpty1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homerestaurantsprofileanddetailsinfo.ui.HomeRestaurantsProfileAndDetailsInfoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilepaymentmethod.ui.ProfilePaymentMethodActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.bookmark.ui.BookmarkActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilemyorderhistory.ui.ProfileMyOrderHistoryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homerestaurantsprofileanddetails2.ui.HomeRestaurantsProfileAndDetails2Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homerestaurantsprofileanddetailsreview.ui.HomeRestaurantsProfileAndDetailsReviewActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.singinnewpassworddataerror.ui.SingInNewPasswordDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profiledisputes.ui.ProfileDisputesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cartpaymentmethod.ui.CartPaymentMethodActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.promocode.ui.PromoCodeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homecurrentlocationnearbyandrecentlocation.ui.HomeCurrentLocationNearbyAndRecentLocationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profiledisputesraiseadisputedataissuesuccessfull.ui.ProfileDisputesRaiseADisputeDataIssueSuccessfullActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cartordertrackingcall.ui.CartOrderTrackingCallActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilesettingprivacypolicy.ui.ProfileSettingPrivacyPolicyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.onboarding3.ui.Onboarding3Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cartordertrackingorderdetail.ui.CartOrderTrackingOrderDetailActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profileeditprofilenodataerror.ui.ProfileEditProfileNoDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profileoffersrestaurantoffer.ui.ProfileOffersRestaurantOfferActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilesettingfaqsquestionssearch.ui.ProfileSettingFaqsQuestionsSearchActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profileofferspromocodepopup.ui.ProfileOffersPromoCodePopupActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilesettingfaqs.ui.ProfileSettingFaqsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profileexpand.ui.ProfileExpandActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homerestaurantsprofileanddetailsreview1.ui.HomeRestaurantsProfileAndDetailsReview1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cartpaymentmethodcurrencynotespopup.ui.CartPaymentMethodCurrencyNotesPopupActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.signupnodataerror.ui.SignUpNoDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cartordertrackingpostreview.ui.CartOrderTrackingPostReviewActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.splash1.ui.Splash1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profiledeliveryaddresspopup.ui.ProfileDeliveryAddressPopupActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profiledeliveryaddressaddressdetails2.ui.ProfileDeliveryAddressAddressDetails2Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.signupdataerror.ui.SignUpDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilesettingsendfeedbacknodataerror.ui.ProfileSettingSendFeedbackNoDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profiledisputesmydisputes1.ui.ProfileDisputesMyDisputes1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homesearchsearchresult.ui.HomeSearchSearchResultActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilesettingcontactusnodataerror.ui.ProfileSettingContactUsNoDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cartaddlocation.ui.CartAddLocationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profileeditprofile.ui.ProfileEditProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.singinnewpassword1.ui.SingInNewPassword1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profiledeliveryaddressaddressdetailsnodataerror.ui.ProfileDeliveryAddressAddressDetailsNoDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilereferafriendshare.ui.ProfileReferAFriendShareActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homerestaurantsprofileanddetailsmenuresult.ui.HomeRestaurantsProfileAndDetailsMenuResultActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cartitemaddtocartpopupcustomfood1.ui.CartItemAddToCartPopupCustomFood1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilechangepasswordpopup.ui.ProfileChangePasswordPopupActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profiledisputes1.ui.ProfileDisputes1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homerestaurantsprofileanddetailsoffers.ui.HomeRestaurantsProfileAndDetailsOffersActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilesettingcontactusdataerror.ui.ProfileSettingContactUsDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cartemptyscreen.ui.CartEmptyScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilepaymentmethodaddnew.ui.ProfilePaymentMethodAddNewActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.group5705.ui.Group5705Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilenotificationsempty1.ui.ProfileNotificationsEmpty1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.onboarding1.ui.Onboarding1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.group5704.ui.Group5704Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilesettingslanguagepreferences.ui.ProfileSettingsLanguagePreferencesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.home.ui.HomeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profileeditprofiledataerror.ui.ProfileEditProfileDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.bookmarkempty.ui.BookmarkEmptyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.singinmobilenumber.ui.SingInMobileNumberActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilepaymentmethod1.ui.ProfilePaymentMethod1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profiledisputesempty.ui.ProfileDisputesEmptyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilepaymentmethodaddnewcardnodataerror.ui.ProfilePaymentMethodAddNewCardNoDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cartaddlocationaddressdetailssavedaddress.ui.CartAddLocationAddressDetailsSavedAddressActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homerestaurantsprofileanddetailsinfo1.ui.HomeRestaurantsProfileAndDetailsInfo1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cartordertracking1.ui.CartOrderTracking1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profiledeliveryaddress.ui.ProfileDeliveryAddressActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.forgotpasswordotpdataerror1.ui.ForgotPasswordOtpDataError1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilenotifications.ui.ProfileNotificationsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cart.ui.CartActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homecurrentlocationsearchresults.ui.HomeCurrentLocationSearchResultsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profiledisputesraiseadisputenodataerror.ui.ProfileDisputesRaiseADisputeNoDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.signupdataerror1.ui.SignUpDataError1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.splash.ui.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wqes.app.modules.cartcheckoutorderplacedsuccessfully.ui.CartCheckoutOrderPlacedSuccessfullyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homerestaurantsprofileanddetails.ui.HomeRestaurantsProfileAndDetailsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilepaymentmethodother.ui.ProfilePaymentMethodOtherActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilemyorderhistorymyorderdetailrepeatorder.ui.ProfileMyOrderHistoryMyOrderDetailRepeatOrderActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.setlocation.ui.SetLocationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.homecurrentlocationgps.ui.HomeCurrentLocationGpsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilechangepassworddataerror.ui.ProfileChangePasswordDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cartofferspromocodepopup.ui.CartOffersPromoCodePopupActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilereferafriend.ui.ProfileReferAFriendActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.cartitemaddtocartpopupcustomfood.ui.CartItemAddToCartPopupCustomFoodActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profiledeliveryaddress1.ui.ProfileDeliveryAddress1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.singinmobilenumbernodataerror.ui.SingInMobileNumberNoDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.singinmobilenumberunregistereddatapopup.ui.SingInMobileNumberUnregisteredDataPopupActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilechangepasswordnodataerror.ui.ProfileChangePasswordNoDataErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wqes.app.modules.profilesettingcontactus.ui.ProfileSettingContactUsActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

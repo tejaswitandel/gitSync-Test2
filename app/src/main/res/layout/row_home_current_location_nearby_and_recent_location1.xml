@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="homeCurrentLocationNearbyAndRecentLocation1RowModel" type="com.wqes.app.modules.homecurrentlocationnearbyandrecentlocation.data.model.HomeCurrentLocationNearbyAndRecentLocation1RowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyle_1">
+        <ImageView android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_16px"
+            android:layout_width="@dimen/_16px" android:src="@drawable/_6433b7fb70ef5a75f2311fd721a50c31"/>
+        <LinearLayout android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10px"
+            android:layout_weight="0.92" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStyle_1">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtGwarinpa"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{homeCurrentLocationNearbyAndRecentLocation1RowModel.txtGwarinpa}" style="@style/textStylePoppinsregular14"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txt143AbujaSoc"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2px"
+                android:layout_marginTop="@dimen/_2px"
+                android:layout_width="match_parent"
+                android:text="@{homeCurrentLocationNearbyAndRecentLocation1RowModel.txt143AbujaSoc}" style="@style/textStylePoppinslight12"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
